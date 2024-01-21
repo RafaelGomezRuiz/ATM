@@ -13,3 +13,6 @@ C:\Users\gsant\Programacionll\ATM\Main\obj\Debug\net8.0\refint\ATM.dll
 C:\Users\gsant\Programacionll\ATM\Main\obj\Debug\net8.0\ATM.pdb
 C:\Users\gsant\Programacionll\ATM\Main\obj\Debug\net8.0\ATM.genruntimeconfig.cache
 C:\Users\gsant\Programacionll\ATM\Main\obj\Debug\net8.0\ref\ATM.dll
+C:\Users\gsant\Programacionll\ATM\Main\obj\Debug\net8.0\ATM.csproj.AssemblyReference.cache
+C:\Users\gsant\Programacionll\ATM\Main\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\gsant\Programacionll\ATM\Main\obj\Debug\net8.0\ATM.csproj.CopyComplete
