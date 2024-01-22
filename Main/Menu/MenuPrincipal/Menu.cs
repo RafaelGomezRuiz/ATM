@@ -1,20 +1,19 @@
 public class Menu
 {
-    public int opcion;
-    string? pin;
+    static public int NumCuenta;
+    static public int pin;
 
-    public void ShowMenuCredenciales()
+    public static void ShowMenuCredenciales()
     {
-        Console.WriteLine("Ingrese su Tarjeta");
-
+        Console.WriteLine("Ingrese su numero de cuenta: ");
+            NumCuenta=int.Parse(Console.ReadLine()!);
             Console.WriteLine("Ingrese su PIN (4 dígitos):");
-            pin = Console.ReadLine();
+            pin = int.Parse(Console.ReadLine()!);
+            ValidarUsuarios.Credenciales(NumCuenta,pin);
+           
     }
 
-    
 
-    public void MenuRecibo()
-    {
-        System.Console.WriteLine("Deseas el recibo de la transaccion? 1.Si/2.No");
-    }
+
+
 }

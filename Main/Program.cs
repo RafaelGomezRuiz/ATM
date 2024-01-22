@@ -5,7 +5,8 @@ using System.Text.Json;
 class Program
 {
     static void Main(string[] args)
-    {
+    {   
+        Menu.ShowMenuCredenciales();
         //Codigo para guardar los usuarios
         // List<Usuario> ResgisUsuario=new List<Usuario>{
         //     new Usuario{
@@ -28,16 +29,16 @@ class Program
             // string jsonString = JsonSerializer.Serialize(usuario);
             // Console.WriteLine(jsonString);
             
-            List<Usuario> usuarios=LeerJson.LeerUsuario();
+            // List<Usuario> usuarios=LeerJson.LeerUsuario();
 
-            List<Cuenta> CuentaUser=new List<Cuenta>();
+            // List<Cuenta> CuentaUser=new List<Cuenta>();
 
-            foreach (var cuenta1 in usuarios)
-            {
-               Cuenta cuentas = new Cuenta(cuenta1);
-                CuentaUser.Add(cuentas);
-            }
+            // foreach (var cuenta1 in usuarios)
+            // {
+            //    Cuenta cuentas = new Cuenta(cuenta1);
+            //     CuentaUser.Add(cuentas);
+            // }
             
-            GuardarJson.GuardarCuenta(CuentaUser);
+            // GuardarJson.GuardarCuenta(CuentaUser);
     }
 }
