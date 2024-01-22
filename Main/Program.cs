@@ -24,8 +24,20 @@ class Program
 
         // GuardarJson.GuardarUsuarios(ResgisUsuario);
 
+            //Este es el ejmplo de
             // string jsonString = JsonSerializer.Serialize(usuario);
-
             // Console.WriteLine(jsonString);
+            
+            List<Usuario> usuarios=LeerJson.LeerUsuario();
+
+            List<Cuenta> CuentaUser=new List<Cuenta>();
+
+            foreach (var cuenta1 in usuarios)
+            {
+               Cuenta cuentas = new Cuenta(cuenta1);
+                CuentaUser.Add(cuentas);
+            }
+            
+            GuardarJson.GuardarCuenta(CuentaUser);
     }
 }

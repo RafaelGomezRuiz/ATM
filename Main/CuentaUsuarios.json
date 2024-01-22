@@ -1,0 +1,30 @@
+[
+  {
+    "Usuario": {
+      "Nombre": "rafael gomez",
+      "Cedula": "4022067",
+      "Correo": "Rafaxxzz@gmail.com",
+      "Telefono": 806954
+    },
+    "FechaCreacion": "2024-01-22T12:46:42.184052-04:00",
+    "NumeroCuenta": 2,
+    "Pin": 1234,
+    "Saldo": 1000.0,
+    "TipoCuenta": "Ahorros",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "Huasca Buryes",
+      "Cedula": "4022000",
+      "Correo": "Aldedilloz@gmail.com",
+      "Telefono": 806803
+    },
+    "FechaCreacion": "2024-01-22T12:46:52.4598274-04:00",
+    "NumeroCuenta": 2,
+    "Pin": 1234,
+    "Saldo": 2000.0,
+    "TipoCuenta": "Corriente",
+    "EstadoCuenta": true
+  }
+]
