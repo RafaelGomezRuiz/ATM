@@ -30,14 +30,14 @@ public class MenuTransacciones{
             case OperacionCajero.ConsultarBalance:
                 MenuConsultarBalance.MenuConsultarBalance();
                 break;
-            case OperacionCajero.Retirar:
-                MenuRetirar.MenuRetirar();
+            case OperacionCajero.PagarPrestamo:
+                MenuPagarPrestamo.MenuPagarPrestamo();
                 break;
-            case OperacionCajero.Retirar:
-                MenuRetirar.MenuRetirar();
+            case OperacionCajero.PagarTarjeta:
+                MenuPagarTarjeta.MenuPagarTarjeta();
                 break;
-            case OperacionCajero.Retirar:
-                MenuRetirar.MenuRetirar();
+            case OperacionCajero.Salir:
+                    System.Console.WriteLine("Retire su tarjeta, el programa finalizado, gracias por preferirnos");
                 break;
         
             default:
