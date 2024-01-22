@@ -1,6 +1,6 @@
 public class MenuPagarTarjeta{
     
-    public static void MenuPagarTarjeta()
+    public static void ShowMenuPagarTarjeta()
     {
         System.Console.WriteLine("Ingresa el numero de la tarjeta: ");
 

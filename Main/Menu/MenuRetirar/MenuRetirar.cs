@@ -1,6 +1,6 @@
 public class MenuRetirar{
     
-    public static void MenuRetirar()
+    public static void ShowMenuRetirar()
     {
         System.Console.WriteLine(@"
         Que Cantidad deseas retirar?

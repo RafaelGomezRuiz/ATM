@@ -3,7 +3,7 @@ public class Menu
     public int opcion;
     string? pin;
 
-    public void MenuCredenciales()
+    public void ShowMenuCredenciales()
     {
         Console.WriteLine("Ingrese su Tarjeta");
 

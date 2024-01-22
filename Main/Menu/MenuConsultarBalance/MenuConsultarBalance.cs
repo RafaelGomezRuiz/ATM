@@ -1,5 +1,5 @@
 public class ConsultarBalance{
-    public static void MenuConsultarBalance(){
+    public static void ShowMenuConsultarBalance(){
         
     }
 }

@@ -1,5 +1,8 @@
 public class MenuTransacciones{
-    public static void MenuTransacciones()
+
+    public static int opcion;
+
+    public static void ShowMenuTransacciones()
     {
         while (true)
         {
@@ -17,24 +20,24 @@ public class MenuTransacciones{
         :
         ");
 
-        opcion=int.Parse(Console.ReadLine());
+        opcion=int.Parse(Console.ReadLine()!);
 
         switch ((OperacionCajero)opcion)
         {  
             case OperacionCajero.Depositar:
-                MenuDepositar.MenuDepositar();
+                MenuDepositar.ShowMenuDepositar();
                 break;
             case OperacionCajero.Retirar:
-                MenuRetirar.MenuRetirar();
+                MenuRetirar.ShowMenuRetirar();
                 break;
             case OperacionCajero.ConsultarBalance:
-                MenuConsultarBalance.MenuConsultarBalance();
+                ConsultarBalance.ShowMenuConsultarBalance();
                 break;
             case OperacionCajero.PagarPrestamo:
-                MenuPagarPrestamo.MenuPagarPrestamo();
+                PagarPrestamo.ShowMenuPagarPrestamo();
                 break;
             case OperacionCajero.PagarTarjeta:
-                MenuPagarTarjeta.MenuPagarTarjeta();
+                MenuPagarTarjeta.ShowMenuPagarTarjeta();
                 break;
             case OperacionCajero.Salir:
                     System.Console.WriteLine("Retire su tarjeta, el programa finalizado, gracias por preferirnos");

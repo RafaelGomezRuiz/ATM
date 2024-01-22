@@ -1,5 +1,5 @@
 public class PagarPrestamo{
-    public static void MenuPagarPrestamo()
+    public static void ShowMenuPagarPrestamo()
     {
         System.Console.WriteLine("Ingresa el numero del prestamo: ");
 

@@ -1,6 +1,6 @@
 public class MenuDepositar{
     
-    public void MenuDepositar()
+    public static void ShowMenuDepositar()
     {
         System.Console.WriteLine("Ingresa el numero de cuenta :");
 

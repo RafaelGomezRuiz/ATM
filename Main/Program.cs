@@ -1,20 +1,31 @@
 ﻿namespace ATM;
 using System.Text.Json;
+
+
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        var usuario = new Usuario
-            {
-                Nombre="rafael gomez",
-                Cedula="121ds",
-                Correo="ds@gmail.com",
-                Telefono = 806954
-            };
+        //Codigo para guardar los usuarios
+        // List<Usuario> ResgisUsuario=new List<Usuario>{
+        //     new Usuario{
+        //         Nombre="rafael gomez",
+        //         Cedula="4022067",
+        //         Correo="Rafaxxzz@gmail.com",
+        //         Telefono = 806954
+        //     },
+        //     new Usuario{
+        //         Nombre="Huasca Buryes",
+        //         Cedula="4022000",
+        //         Correo="Aldedilloz@gmail.com",
+        //         Telefono = 806803
+        //     }
+        // };
 
-            string jsonString = JsonSerializer.Serialize(usuario);
+        // GuardarJson.GuardarUsuarios(ResgisUsuario);
 
-            Console.WriteLine(jsonString);
+            // string jsonString = JsonSerializer.Serialize(usuario);
+
+            // Console.WriteLine(jsonString);
     }
 }
