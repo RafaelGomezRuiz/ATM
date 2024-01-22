@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {   
-        Menu.ShowMenuCredenciales();
+        MenuPrincipal.ShowMenuCredenciales();
         //Codigo para guardar los usuarios
         // List<Usuario> ResgisUsuario=new List<Usuario>{
         //     new Usuario{
@@ -36,6 +36,7 @@ class Program
             // foreach (var cuenta1 in usuarios)
             // {
             //    Cuenta cuentas = new Cuenta(cuenta1);
+            //    cuentas.NumeroCuenta+=1;
             //     CuentaUser.Add(cuentas);
             // }
             

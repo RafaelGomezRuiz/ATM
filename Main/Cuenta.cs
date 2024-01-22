@@ -1,6 +1,6 @@
 public class Cuenta{
 
-    public int NumeroCuenta { get; set; }=1;
+    public int NumeroCuenta { get; set; }=0;
     public Usuario Usuario;
     public int Pin { get; set; }
     public double Saldo { get; set; }
@@ -8,9 +8,13 @@ public class Cuenta{
     public bool EstadoCuenta {get;set;}
     public DateTime FechaCreacion;
 
+    public Cuenta()
+    {
+        
+    }
+
     public Cuenta(Usuario usuario)
     {
-        NumeroCuenta +=1;
         Usuario = usuario;
         System.Console.WriteLine("introduce un pin de 4 digitos");
         Pin = int.Parse(Console.ReadLine()!);

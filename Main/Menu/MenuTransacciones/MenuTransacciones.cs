@@ -1,22 +1,23 @@
 public class MenuTransacciones{
 
     public static int opcion;
+    public static bool bucle=true;
 
     public static void ShowMenuTransacciones()
     {
-        while (true)
+        while (bucle)
         {
             
         
         System.Console.WriteLine(@"
         Que operacion deseas realizar?
         
-        1. Deposito
-        2. Retiro
-        3. Consultar balance
-        4. Pagar prestamo
-        5. Pagar Tarjeta
-        6. Salir
+        0. Deposito
+        1. Retiro
+        2. Consultar balance
+        3. Pagar prestamo
+        4. Pagar Tarjeta
+        5. Salir
         :
         ");
 
@@ -41,6 +42,7 @@ public class MenuTransacciones{
                 break;
             case OperacionCajero.Salir:
                     System.Console.WriteLine("Retire su tarjeta, el programa finalizado, gracias por preferirnos");
+                bucle=false;
                 break;
         
             default:

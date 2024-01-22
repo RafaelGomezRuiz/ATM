@@ -4,4 +4,5 @@ public class Usuario
     public string? Cedula { get; set; }
     public string? Correo { get; set; }
     public int Telefono { get; set; }
+
 }
