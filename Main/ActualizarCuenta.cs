@@ -1,6 +1,6 @@
 public class ActualizarCuenta{
 
-    public static void ActualizarCuenta(){
+    public static void ActualizarCuentaDespuesTransaccion(){
         
     }
 

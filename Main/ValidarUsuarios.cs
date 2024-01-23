@@ -52,8 +52,7 @@ public class ValidarUsuarios{
         {
             System.Console.WriteLine("Haz intentado más de tres veces, su cuenta ha sido inhabilitada.");
             
-            var cuentaEnJson=Cuenta BuscarCuenta(CuentaUsuario.NumeroCuenta);
-            cuentaEnJson.EstadoCuenta = false;
+            CuentaUsuario.EstadoCuenta = false;
             
 
             MenuPrincipal.buclePin = false;
