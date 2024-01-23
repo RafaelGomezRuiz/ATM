@@ -2,7 +2,7 @@ public class Cuenta{
     public static int autoIncremento=0;
 
     public int NumeroCuenta { get; set; }
-    public Usuario Usuario;
+    public Usuario? Usuario;
     public int Pin { get; set; }
     public double Saldo { get; set; }
     public string? TipoCuenta { get; set; }

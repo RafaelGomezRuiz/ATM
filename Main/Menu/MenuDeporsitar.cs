@@ -1,6 +1,6 @@
 public class MenuDepositar{
     public static int numCuentaDestino;
-    public static Cuenta? cuentaDestino;
+    public static Cuenta cuentaDestino;
     public static double monto;
 
     public static void ShowMenuDepositar()
@@ -16,7 +16,15 @@ public class MenuDepositar{
             monto=double.Parse(Console.ReadLine()!);
 
             if(MenuPrincipal.cuentaUsuarioLogeado.Saldo>monto){
-            Transacciones.Depositar(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto); //este metodo recibe la cuenta que se valido al iniciar sesion
+                Transacciones.Depositar(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto); //este metodo recibe la cuenta que se valido al iniciar sesion
+                
+                List<Cuenta>? cuentaActualizadas= new List<Cuenta>();
+                cuentaActualizadas.Add(MenuPrincipal.cuentaUsuarioLogeado);
+                cuentaActualizadas.Add(cuentaDestino);
+
+                GuardarJson.GuardarCuentaActualizada(cuentaActualizadas);
+
+                System.Console.WriteLine("Deposito exitoso.");
             }
             else{
                 System.Console.WriteLine("No tienes saldo suficiente");

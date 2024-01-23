@@ -21,4 +21,10 @@ public class GuardarJson{
         string? cuentaJson=JsonConvert.SerializeObject(cuentas, Formatting.Indented);
         File.WriteAllText(rutaCuenta,cuentaJson);
     }
+    
+    public static void GuardarCuentaActualizada(List<Cuenta> cuentas){
+        string? cuentaJsonActualizada=JsonConvert.SerializeObject(cuentas, Formatting.Indented);
+        File.WriteAllText(rutaCuenta,cuentaJsonActualizada);
+    }
+
 }
