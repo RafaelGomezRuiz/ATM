@@ -1,11 +1,7 @@
 public class Transacciones{
-    public DateTime FechaHora;
-
-        public DateTime FechaHoraActual()
-    {
-        return DateTime.Now;
-    }
-
+    string? Operacion {get;set;}
+    decimal Monto{get;set;}
+    
     // public void Depositar(Cuenta cuentaDestino, decimal monto)
     // {
     //     // Lógica para depositar

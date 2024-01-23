@@ -1,5 +1,5 @@
 public class ValidarUsuarios{
-    int conteo=0;
+    public static int conteo=0;
 
     public static Cuenta BuscarCuenta(int numCuenta){
         List<Cuenta> cuentas=LeerJson.LeerCuenta();
@@ -20,28 +20,44 @@ public class ValidarUsuarios{
             return false;
         }
     }
+    public static bool CuentaHabilitada(Cuenta CuentaUsuario){
 
-    public static void Credenciales(Cuenta CuentaUsuario, int pin){
-
-        int PinUser=CuentaUsuario.Pin;
-
-        //Para hacerlo con where se tomarian esas 4 lineas
-        //var cuentasList=cuentas.Where(p =>p.NumeroCuenta==numCuenta && p.Pin==pin).ToList();
-        //var cuentaUser = cuentasList.First(); // Obtener el primer elemento de la lista
-        //int nCuUser = cuentaUser.NumeroCuenta;
-        //int pinCuUser = cuentaUser.Pin;
-       
-            
-
-            if ( PinUser ==pin)
-            {
-                MenuTransacciones.ShowMenuTransacciones();
-            }
-            else if ( PinUser !=pin)
-            {
-                Console.WriteLine("Pin incorrecto intentelo nuevamente");
-                
-            }
-            
+        
+         if(CuentaUsuario.EstadoCuenta){
+            return true;
+         }
+         else{
+            return false;
+        }
     }
+
+    public static void Credenciales(Cuenta CuentaUsuario, int pin)
+{
+    int PinUser = CuentaUsuario.Pin;
+
+    if (PinUser == pin)
+    {
+        MenuTransacciones.ShowMenuTransacciones();
+        MenuPrincipal.buclePin = false;
+    }
+    else if (PinUser != pin)
+    {
+        if (conteo < 3)
+        {
+            Console.WriteLine("Pin incorrecto, inténtelo nuevamente");
+            conteo++;
+            
+        }
+        else if (conteo >= 3)
+        {
+            System.Console.WriteLine("Haz intentado más de tres veces, su cuenta ha sido inhabilitada.");
+            
+            var cuentaEnJson=Cuenta BuscarCuenta(CuentaUsuario.NumeroCuenta);
+            cuentaEnJson.EstadoCuenta = false;
+            
+
+            MenuPrincipal.buclePin = false;
+        }
+    }
+}
 }

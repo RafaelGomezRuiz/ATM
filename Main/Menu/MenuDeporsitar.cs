@@ -2,8 +2,11 @@ public class MenuDepositar{
     
     public static void ShowMenuDepositar()
     {
+        
+        
         System.Console.WriteLine("Ingresa el numero de cuenta :");
-
+        
+        //ValidarUsuarios.BuscarCuenta(NumCuenta);
         System.Console.WriteLine("Ingrese el tipo de cuenta Ahorro/Corriente :");
 
         System.Console.WriteLine("Ingresa el monto: ");

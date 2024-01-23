@@ -1,6 +1,7 @@
 public class Cuenta{
+    public static int autoIncremento=0;
 
-    public int NumeroCuenta { get; set; }=0;
+    public int NumeroCuenta { get; set; }
     public Usuario Usuario;
     public int Pin { get; set; }
     public double Saldo { get; set; }
@@ -15,6 +16,7 @@ public class Cuenta{
 
     public Cuenta(Usuario usuario)
     {
+        NumeroCuenta=autoIncremento++;
         Usuario = usuario;
         System.Console.WriteLine("introduce un pin de 4 digitos");
         Pin = int.Parse(Console.ReadLine()!);
