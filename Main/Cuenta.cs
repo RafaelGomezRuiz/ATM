@@ -29,6 +29,20 @@ public class Cuenta{
         
     }
 
+    public static List<Cuenta> GuardarCuenta(){
+        List<Usuario> usuarios=LeerJson.LeerUsuario();
+
+            List<Cuenta> CuentaUser=new List<Cuenta>();
+
+            foreach (var cuenta1 in usuarios)
+            {
+               Cuenta cuentas = new Cuenta(cuenta1);
+               cuentas.NumeroCuenta+=1;
+                CuentaUser.Add(cuentas);
+            }
+            return CuentaUser;
+    }
+
     
 
 }

@@ -5,8 +5,9 @@ public class Usuario
     public string? Correo { get; set; }
     public int Telefono { get; set; }
 
-    /*public static void GuardarUsuarios(){
-        List<Usuario> ResgisUsuario=new List<Usuario>{
+    
+    public static List<Usuario> GuardarUsuarios(){
+        List<Usuario>? ResgisUsuario=new List<Usuario>{
             new Usuario{
                 Nombre="rafael gomez",
                 Cedula="4022067",
@@ -32,5 +33,6 @@ public class Usuario
                 Telefono = 806803
             }
         };
-    }*/
+        return ResgisUsuario;
+    }
 }

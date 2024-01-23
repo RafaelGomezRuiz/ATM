@@ -18,11 +18,12 @@ public class MenuDepositar{
             if(MenuPrincipal.cuentaUsuarioLogeado.Saldo>monto){
                 Transacciones.Depositar(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto); //este metodo recibe la cuenta que se valido al iniciar sesion
                 
-                List<Cuenta>? cuentaActualizadas= new List<Cuenta>();
-                cuentaActualizadas.Add(MenuPrincipal.cuentaUsuarioLogeado);
-                cuentaActualizadas.Add(cuentaDestino);
+                List<Cuenta>? cuentasActualesJson= LeerJson.LeerCuenta(); //leer cuenta tiene las cuentas dezerializadas
+                //List<Cuenta>? cuentaActualizadas= new List<Cuenta>();
+                cuentasActualesJson.Add(MenuPrincipal.cuentaUsuarioLogeado);
+                cuentasActualesJson.Add(cuentaDestino);
 
-                GuardarJson.GuardarCuentaActualizada(cuentaActualizadas);
+                GuardarJson.GuardarCuentaActualizada(cuentasActualesJson);
 
                 System.Console.WriteLine("Deposito exitoso.");
             }
@@ -31,7 +32,8 @@ public class MenuDepositar{
             }
         }
         else{
-            System.Console.WriteLine("No existe cuenta con ese numero");
+            System.Console.WriteLine("No existe cuenta con ese numero, presiona cualquier tecla para continuar");
+            Console.ReadKey();
         }
     }
 }

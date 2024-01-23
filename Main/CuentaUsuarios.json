@@ -6,11 +6,11 @@
       "Correo": "Rafaxxzz@gmail.com",
       "Telefono": 806954
     },
-    "FechaCreacion": "2024-01-23T13:10:07.0058292-04:00",
+    "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
     "NumeroCuenta": 1,
     "Pin": 1234,
-    "Saldo": 500.0,
-    "TipoCuenta": "ahorro",
+    "Saldo": 2000.0,
+    "TipoCuenta": "ahorros",
     "EstadoCuenta": true
   },
   {
@@ -20,10 +20,38 @@
       "Correo": "Aldedilloz@gmail.com",
       "Telefono": 806803
     },
-    "FechaCreacion": "2024-01-23T13:10:24.5942751-04:00",
+    "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
     "NumeroCuenta": 2,
     "Pin": 1234,
-    "Saldo": 1500.0,
+    "Saldo": 50000.0,
+    "TipoCuenta": "corriente",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "Oliver Betances",
+      "Cedula": "4022000",
+      "Correo": "olioli@gmail.com",
+      "Telefono": 806803
+    },
+    "FechaCreacion": "2024-01-23T15:58:20.5118211-04:00",
+    "NumeroCuenta": 3,
+    "Pin": 1234,
+    "Saldo": 70000.0,
+    "TipoCuenta": "ahorros",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "El negrito ojos claros",
+      "Cedula": "4022000",
+      "Correo": "Ozhuna@gmail.com",
+      "Telefono": 806803
+    },
+    "FechaCreacion": "2024-01-23T15:58:30.4269582-04:00",
+    "NumeroCuenta": 4,
+    "Pin": 1234,
+    "Saldo": 90000.0,
     "TipoCuenta": "corriente",
     "EstadoCuenta": true
   }
