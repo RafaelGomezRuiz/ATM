@@ -1,11 +1,12 @@
 public class Transacciones{
-    string? Operacion {get;set;}
-    decimal Monto{get;set;}
     
-    // public void Depositar(Cuenta cuentaDestino, decimal monto)
-    // {
-    //     // Lógica para depositar
-    // }
+    
+    public static void Depositar(Cuenta cuentaOrigen, Cuenta cuentaDestino, double monto)
+    {
+        cuentaOrigen.Saldo-=monto;
+        cuentaDestino.Saldo+=monto;
+
+    }
 
     // public void Retirar(Cuenta cuenta, decimal monto)
     // {

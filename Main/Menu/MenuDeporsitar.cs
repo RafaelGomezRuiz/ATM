@@ -1,17 +1,29 @@
 public class MenuDepositar{
-    
+    public static int numCuentaDestino;
+    public static Cuenta? cuentaDestino;
+    public static double monto;
+
     public static void ShowMenuDepositar()
     {
-        
-        
         System.Console.WriteLine("Ingresa el numero de cuenta :");
-        
-        //ValidarUsuarios.BuscarCuenta(NumCuenta);
-        System.Console.WriteLine("Ingrese el tipo de cuenta Ahorro/Corriente :");
+        numCuentaDestino=int.Parse(Console.ReadLine()!);
+        ValidarUsuarios.ExisteCuenta(numCuentaDestino);
 
-        System.Console.WriteLine("Ingresa el monto: ");
+        if(ValidarUsuarios.ExisteCuenta(numCuentaDestino)){
 
-        //moestrar info de la transaccion
-        System.Console.WriteLine("Deseas realizar el deposito? 1.Si/2.No");
+            cuentaDestino=ValidarUsuarios.BuscarCuenta(numCuentaDestino);
+            System.Console.WriteLine("Ingresa el monto: ");
+            monto=double.Parse(Console.ReadLine()!);
+
+            if(MenuPrincipal.cuentaUsuarioLogeado.Saldo>monto){
+            Transacciones.Depositar(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto); //este metodo recibe la cuenta que se valido al iniciar sesion
+            }
+            else{
+                System.Console.WriteLine("No tienes saldo suficiente");
+            }
+        }
+        else{
+            System.Console.WriteLine("No existe cuenta con ese numero");
+        }
     }
 }

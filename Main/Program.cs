@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {   
-        //MenuPrincipal.ShowMenuCredenciales();
+        MenuPrincipal.ShowMenuCredenciales();
         // List<Usuario> ResgisUsuario=new List<Usuario>{
         //     new Usuario{
         //         Nombre="rafael gomez",

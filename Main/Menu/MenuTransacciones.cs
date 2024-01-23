@@ -5,10 +5,9 @@ public class MenuTransacciones{
 
     public static void ShowMenuTransacciones()
     {
+         //Console.Title=$"bienvenido {MenuPrincipal.cuentaUsuarioLogeado.Nombre}"; ----Hare esto despues
         while (bucle)
         {
-            
-        
         System.Console.WriteLine(@"
         Que operacion deseas realizar?
         
