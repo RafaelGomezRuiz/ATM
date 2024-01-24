@@ -1,6 +1,6 @@
-public class MenuRetirar{
+public class MenuDepositar{
  
-    public static void ShowMenuRetirar()
+    public static void ShowMenuDepositar()
     {
         while(true)
             {
@@ -11,10 +11,10 @@ public class MenuRetirar{
 
                                 GuardarJson.RemoverCuentaJson(MenuPrincipal.cuentaUsuarioLogeado);
 
-                                Transacciones.Retirar(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto); //este metodo recibe la cuenta que se valido al iniciar sesion
+                                Transacciones.Depositar(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto); //este metodo recibe la cuenta que se valido al iniciar sesion
                                 
                                 GuardarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.cuentaUsuarioLogeado);
-                                System.Console.WriteLine("Transferencia exitosa.");
+                                System.Console.WriteLine("Deposito exitosa.");
                                 break;
                                 
                             }

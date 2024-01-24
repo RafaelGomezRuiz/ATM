@@ -6,6 +6,8 @@ public class GuardarJson{
 
     const string? rutaArchivo="usuarios.json";
     const string rutaCuenta="CuentaUsuarios.json";
+    public static List<Cuenta>? cuentasActualesJson= LeerJson.LeerCuenta();
+
     public static void GuardarUsuarios(List<Usuario> usuario){
         
         //Para hacerlo de esta manera hay que importar System.Text.Json el otr ejemplo es con Newton
@@ -26,6 +28,19 @@ public class GuardarJson{
         
         string? cuentaJsonActualizada=JsonConvert.SerializeObject(cuentas, Formatting.Indented);
         File.WriteAllText(rutaCuenta,cuentaJsonActualizada);
+    }
+
+    public static void ActualizarCuentasDespuesTransaccion(Cuenta cuentaUsuario){
+        
+                //leer cuenta tiene las cuentas dezerializadas
+                cuentasActualesJson.Add(cuentaUsuario);
+ 
+                GuardarJson.GuardarCuentaActualizada(cuentasActualesJson);
+    }
+    public static void RemoverCuentaJson(Cuenta cuentaUsuario){
+                Cuenta cuenta=cuentasActualesJson.FirstOrDefault(p => p.NumeroCuenta==cuentaUsuario.NumeroCuenta);
+                
+                cuentasActualesJson.Remove(cuenta);
     }
 
 }

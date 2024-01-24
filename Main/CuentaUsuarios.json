@@ -1,34 +1,6 @@
 [
   {
     "Usuario": {
-      "Nombre": "rafael gomez",
-      "Cedula": "4022067",
-      "Correo": "Rafaxxzz@gmail.com",
-      "Telefono": 806954
-    },
-    "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
-    "NumeroCuenta": 1,
-    "Pin": 1234,
-    "Saldo": 2000.0,
-    "TipoCuenta": "ahorros",
-    "EstadoCuenta": true
-  },
-  {
-    "Usuario": {
-      "Nombre": "Huasca Buryes",
-      "Cedula": "4022000",
-      "Correo": "Aldedilloz@gmail.com",
-      "Telefono": 806803
-    },
-    "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
-    "NumeroCuenta": 2,
-    "Pin": 1234,
-    "Saldo": 50000.0,
-    "TipoCuenta": "corriente",
-    "EstadoCuenta": true
-  },
-  {
-    "Usuario": {
       "Nombre": "Oliver Betances",
       "Cedula": "4022000",
       "Correo": "olioli@gmail.com",
@@ -53,6 +25,48 @@
     "Pin": 1234,
     "Saldo": 90000.0,
     "TipoCuenta": "corriente",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "Huasca Buryes",
+      "Cedula": "4022000",
+      "Correo": "Aldedilloz@gmail.com",
+      "Telefono": 806803
+    },
+    "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+    "NumeroCuenta": 2,
+    "Pin": 1234,
+    "Saldo": 46229.0,
+    "TipoCuenta": "corriente",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "rafael gomez",
+      "Cedula": "4022067",
+      "Correo": "Rafaxxzz@gmail.com",
+      "Telefono": 806954
+    },
+    "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
+    "NumeroCuenta": 1,
+    "Pin": 1234,
+    "Saldo": 1589.0,
+    "TipoCuenta": "ahorros",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "rafael gomez",
+      "Cedula": "4022067",
+      "Correo": "Rafaxxzz@gmail.com",
+      "Telefono": 806954
+    },
+    "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
+    "NumeroCuenta": 1,
+    "Pin": 1234,
+    "Saldo": 1589.0,
+    "TipoCuenta": "ahorros",
     "EstadoCuenta": true
   }
 ]

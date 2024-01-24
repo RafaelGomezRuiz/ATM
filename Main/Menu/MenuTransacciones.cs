@@ -5,18 +5,19 @@ public class MenuTransacciones{
 
     public static void ShowMenuTransacciones()
     {
-         //Console.Title=$"bienvenido {MenuPrincipal.cuentaUsuarioLogeado.Nombre}"; ----Hare esto despues
+        Console.Title=$"Bienvenido {MenuPrincipal.cuentaUsuarioLogeado.Usuario.Nombre}"; 
         while (bucle)
         {
         System.Console.WriteLine(@"
         Que operacion deseas realizar?
         
-        0. Deposito
+        0. Transferencia
         1. Retiro
-        2. Consultar balance
-        3. Pagar prestamo
-        4. Pagar Tarjeta
-        5. Salir
+        2. Deposito
+        3. Consultar balance
+        4. Pagar prestamo
+        5. Pagar Tarjeta
+        6. Salir
         :
         ");
 
@@ -24,14 +25,18 @@ public class MenuTransacciones{
 
         switch ((OperacionCajero)opcion)
         {  
-            case OperacionCajero.Depositar:
-                MenuDepositar.ShowMenuDepositar();
+            case OperacionCajero.Transferencia:
+                MenuTransferencia.ShowMenuTransferencia();
                 break;
             case OperacionCajero.Retirar:
                 MenuRetirar.ShowMenuRetirar();
                 break;
+            case OperacionCajero.Depositar:
+                MenuDepositar.ShowMenuDepositar();
+                break;
             case OperacionCajero.ConsultarBalance:
-                ConsultarBalance.ShowMenuConsultarBalance();
+                Transacciones.ConsultarBalance(MenuPrincipal.cuentaUsuarioLogeado);
+                bucle=false;
                 break;
             case OperacionCajero.PagarPrestamo:
                 PagarPrestamo.ShowMenuPagarPrestamo();
@@ -53,8 +58,9 @@ public class MenuTransacciones{
     }
     public enum OperacionCajero
         {
-            Depositar,
+            Transferencia,
             Retirar,
+            Depositar,
             ConsultarBalance,
             PagarPrestamo,
             PagarTarjeta,
