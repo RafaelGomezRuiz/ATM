@@ -4,7 +4,7 @@ public class ValidarUsuarios{
     public static Cuenta BuscarCuenta(int numCuenta){
         List<Cuenta> cuentas=LeerJson.LeerCuenta();
         
-        var CuentaUsuario=cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
+        Cuenta? CuentaUsuario=cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
         return CuentaUsuario;
     }
 

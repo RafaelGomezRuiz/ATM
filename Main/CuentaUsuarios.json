@@ -1,20 +1,6 @@
 [
   {
     "Usuario": {
-      "Nombre": "Oliver Betances",
-      "Cedula": "4022000",
-      "Correo": "olioli@gmail.com",
-      "Telefono": 806803
-    },
-    "FechaCreacion": "2024-01-23T15:58:20.5118211-04:00",
-    "NumeroCuenta": 3,
-    "Pin": 1234,
-    "Saldo": 70000.0,
-    "TipoCuenta": "ahorros",
-    "EstadoCuenta": true
-  },
-  {
-    "Usuario": {
       "Nombre": "El negrito ojos claros",
       "Cedula": "4022000",
       "Correo": "Ozhuna@gmail.com",
@@ -37,7 +23,7 @@
     "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
     "NumeroCuenta": 2,
     "Pin": 1234,
-    "Saldo": 46229.0,
+    "Saldo": 46279.0,
     "TipoCuenta": "corriente",
     "EstadoCuenta": true
   },
@@ -51,7 +37,21 @@
     "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
     "NumeroCuenta": 1,
     "Pin": 1234,
-    "Saldo": 1589.0,
+    "Saldo": 1449.0,
+    "TipoCuenta": "ahorros",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "Oliver Betances",
+      "Cedula": "4022000",
+      "Correo": "olioli@gmail.com",
+      "Telefono": 806803
+    },
+    "FechaCreacion": "2024-01-23T15:58:20.5118211-04:00",
+    "NumeroCuenta": 3,
+    "Pin": 1234,
+    "Saldo": 70100.0,
     "TipoCuenta": "ahorros",
     "EstadoCuenta": true
   },
@@ -65,7 +65,7 @@
     "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
     "NumeroCuenta": 1,
     "Pin": 1234,
-    "Saldo": 1589.0,
+    "Saldo": 1459.0,
     "TipoCuenta": "ahorros",
     "EstadoCuenta": true
   }

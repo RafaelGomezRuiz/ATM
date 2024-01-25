@@ -1,7 +1,14 @@
 public class MenuDepositar{
  
     public static void ShowMenuDepositar()
-    {
+    {   
+        System.Console.WriteLine("Ingresa el numero de cuenta :");
+        MenuTransferencia.numCuentaDestino=int.Parse(Console.ReadLine()!);
+        ValidarUsuarios.ExisteCuenta(MenuTransferencia.numCuentaDestino);
+
+        if(ValidarUsuarios.ExisteCuenta(MenuTransferencia.numCuentaDestino)){
+        MenuTransferencia.cuentaDestino=ValidarUsuarios.BuscarCuenta(MenuTransferencia.numCuentaDestino);
+
         while(true)
             {
                 System.Console.WriteLine("Ingresa el monto: ");
@@ -14,7 +21,10 @@ public class MenuDepositar{
                                 Transacciones.Depositar(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto); //este metodo recibe la cuenta que se valido al iniciar sesion
                                 
                                 GuardarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.cuentaUsuarioLogeado);
-                                System.Console.WriteLine("Deposito exitosa.");
+                                System.Console.WriteLine("Deposito exitoso.");
+
+                                MenuTransferencia.OperacionRealizada=Transacciones.OperacionDeposito(MenuTransferencia.cuentaDestino, MenuTransferencia.monto);
+                                GuardarJson.GuardarHistorial(MenuTransferencia.OperacionRealizada);
                                 break;
                                 
                             }
@@ -28,5 +38,9 @@ public class MenuDepositar{
                             continue;
                         }
             }
+    }
+    else{
+        System.Console.WriteLine("Esa cuenta no existe");
+    }
     }
 }

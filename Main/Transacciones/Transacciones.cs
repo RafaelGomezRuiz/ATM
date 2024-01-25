@@ -1,6 +1,9 @@
 public class Transacciones{
     //public string? NombreUsuario{get;set;}
 
+    static Operaciones operacion= new Operaciones();
+    public static DateTime fechaActual=DateTime.Now;
+
     
     public static void Transferir(Cuenta cuentaOrigen, Cuenta cuentaDestino, double monto)
     {
@@ -11,11 +14,11 @@ public class Transacciones{
     {
         cuentaOrigen.Saldo-=monto;
     }
-    public static void Depositar(Cuenta cuentaOrigen, double monto)
+    public static void Depositar(Cuenta? cuentaOrigen, double monto)
     {
         cuentaOrigen.Saldo+=monto;
     }
-    public static void ConsultarBalance(Cuenta cuentaUsuarioLogeado)
+    public static void ConsultarBalance(Cuenta? cuentaUsuarioLogeado)
     {
         System.Console.WriteLine(@$"
         {cuentaUsuarioLogeado.Usuario.Nombre}, 
@@ -24,23 +27,21 @@ public class Transacciones{
         ");
     }
 
-    // public void Retirar(Cuenta cuenta, decimal monto)
-    // {
-    //     // Lógica para retirar
-    // }
+    public static Operaciones OperacionTranferencia(Cuenta cuentaOrigen, Cuenta cuentaDestino, double monto){
+        operacion.NumeroCuentaUsuario=cuentaOrigen.NumeroCuenta;
+        operacion.Operacion="Transferencia";
+        operacion.NumeroCuentaDestino=cuentaDestino.NumeroCuenta;
+        operacion.Monto=monto;
+        operacion.Fecha=fechaActual;
 
-    // public void PagarPrestamo(Cuenta cuenta, decimal monto)
-    // {
-    //     // Lógica para pagar préstamo
-    // }
+        return operacion;
+    }
+    public static Operaciones OperacionDeposito(Cuenta cuentaDestino, double monto){
+        operacion.Operacion="Deposito";
+        operacion.NumeroCuentaDestino=cuentaDestino.NumeroCuenta;
+        operacion.Monto=monto;
+        operacion.Fecha=fechaActual;
 
-    // public void ImprimirRecibo(string usuario, int numeroCuenta, string operacion, decimal monto)
-    // {
-    //     // Lógica para imprimir recibo
-    // }
-
-    // public void ConsultarBalance(Cuenta cuenta)
-    // {
-    //     // Lógica para consultar el saldo
-    // }
+        return operacion;
+    }
 }

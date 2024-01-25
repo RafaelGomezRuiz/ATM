@@ -1,0 +1,30 @@
+[
+  {
+    "NumeroCuentaUsuario": 1,
+    "Operacion": "Transferencia",
+    "NumeroCuentaDestino": 2,
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T17:08:53.3638877-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 1,
+    "Operacion": "Transferencia",
+    "NumeroCuentaDestino": 2,
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T17:08:53.3638877-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 1,
+    "Operacion": "Transferencia",
+    "NumeroCuentaDestino": 3,
+    "Monto": 100.0,
+    "Fecha": "2024-01-25T17:11:21.0791753-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 1,
+    "Operacion": "Transferencia",
+    "NumeroCuentaDestino": 3,
+    "Monto": 100.0,
+    "Fecha": "2024-01-25T17:11:21.0791753-04:00"
+  }
+]

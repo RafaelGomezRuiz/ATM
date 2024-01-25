@@ -4,9 +4,13 @@ using Newtonsoft.Json;
 
 public class GuardarJson{
 
-    const string? rutaArchivo="usuarios.json";
-    const string rutaCuenta="CuentaUsuarios.json";
+    public const string? rutaUsuarios="usuarios.json"; //las constantes por defecto son estaticas
+    public const string? rutaCuenta="CuentaUsuarios.json";
+    public const string? rutaHistorialOperaciones="HistorialOperacion.json";
+
     public static List<Cuenta>? cuentasActualesJson= LeerJson.LeerCuenta();
+
+    public static List<Operaciones> HistorialJson= LeerJson.LeerHistorialOperaciones();
 
     public static void GuardarUsuarios(List<Usuario> usuario){
         
@@ -16,7 +20,7 @@ public class GuardarJson{
 
         //con esta linea hacemos lo mismo que haciamos en las dos lineas anteriores
         string? Json=JsonConvert.SerializeObject(usuario,Formatting.Indented);
-        File.WriteAllText(rutaArchivo,Json);
+        File.WriteAllText(rutaUsuarios,Json);
     }
     public static void GuardarCuenta(List<Cuenta> cuentas){
 
@@ -37,10 +41,17 @@ public class GuardarJson{
  
                 GuardarJson.GuardarCuentaActualizada(cuentasActualesJson);
     }
+
+    public static void GuardarHistorial(Operaciones operacion){
+        HistorialJson.Add(operacion);
+        string? HistorialOpreciones=JsonConvert.SerializeObject(HistorialJson,Formatting.Indented);
+        File.WriteAllText(rutaHistorialOperaciones,HistorialOpreciones);
+    }
+
     public static void RemoverCuentaJson(Cuenta cuentaUsuario){
-                Cuenta cuenta=cuentasActualesJson.FirstOrDefault(p => p.NumeroCuenta==cuentaUsuario.NumeroCuenta);
-                
-                cuentasActualesJson.Remove(cuenta);
+            Cuenta cuenta=cuentasActualesJson.FirstOrDefault(p => p.NumeroCuenta==cuentaUsuario.NumeroCuenta);
+            
+            cuentasActualesJson.Remove(cuenta);
     }
 
 }
