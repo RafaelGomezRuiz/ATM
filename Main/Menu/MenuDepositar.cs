@@ -23,8 +23,8 @@ public class MenuDepositar{
                                 GuardarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.cuentaUsuarioLogeado);
                                 System.Console.WriteLine("Deposito exitoso.");
 
-                                MenuTransferencia.OperacionRealizada=Transacciones.OperacionDeposito(MenuTransferencia.cuentaDestino, MenuTransferencia.monto);
-                                GuardarJson.GuardarHistorial(MenuTransferencia.OperacionRealizada);
+                                Transacciones.OperacionDeposito(MenuTransferencia.cuentaDestino, MenuTransferencia.monto);
+                                GuardarJson.GuardarHistorial(Transacciones.operacion);
                                 break;
                                 
                             }

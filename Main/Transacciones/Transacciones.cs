@@ -1,7 +1,7 @@
 public class Transacciones{
     //public string? NombreUsuario{get;set;}
+        public static Operaciones operacion= new Operaciones();
 
-    static Operaciones operacion= new Operaciones();
     public static DateTime fechaActual=DateTime.Now;
 
     
@@ -28,20 +28,19 @@ public class Transacciones{
     }
 
     public static Operaciones OperacionTranferencia(Cuenta cuentaOrigen, Cuenta cuentaDestino, double monto){
+
         operacion.NumeroCuentaUsuario=cuentaOrigen.NumeroCuenta;
         operacion.Operacion="Transferencia";
         operacion.NumeroCuentaDestino=cuentaDestino.NumeroCuenta;
         operacion.Monto=monto;
         operacion.Fecha=fechaActual;
-
         return operacion;
     }
-    public static Operaciones OperacionDeposito(Cuenta cuentaDestino, double monto){
+    public static Operaciones  OperacionDeposito(Cuenta cuentaDestino, double monto){
         operacion.Operacion="Deposito";
         operacion.NumeroCuentaDestino=cuentaDestino.NumeroCuenta;
         operacion.Monto=monto;
         operacion.Fecha=fechaActual;
-
         return operacion;
     }
     public static Operaciones OperacionRetiro(Cuenta cuentaUsuarioLogeado, double monto){
@@ -49,7 +48,6 @@ public class Transacciones{
         operacion.Operacion="Retiro";
         operacion.Monto=monto;
         operacion.Fecha=fechaActual;
-
         return operacion;
     }
 }

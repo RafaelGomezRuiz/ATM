@@ -27,22 +27,19 @@ public class MenuTransacciones{
         {  
             case OperacionCajero.Transferencia:
                 MenuTransferencia.ShowMenuTransferencia();
+                bucle=false;
                 break;
             case OperacionCajero.Retirar:
                 MenuRetirar.ShowMenuRetirar();
+                bucle=false;
                 break;
             case OperacionCajero.Depositar:
                 MenuDepositar.ShowMenuDepositar();
+                bucle=false;
                 break;
             case OperacionCajero.ConsultarBalance:
                 Transacciones.ConsultarBalance(MenuPrincipal.cuentaUsuarioLogeado);
                 bucle=false;
-                break;
-            case OperacionCajero.PagarPrestamo:
-                PagarPrestamo.ShowMenuPagarPrestamo();
-                break;
-            case OperacionCajero.PagarTarjeta:
-                MenuPagarTarjeta.ShowMenuPagarTarjeta();
                 break;
             case OperacionCajero.Salir:
                     System.Console.WriteLine("Retire su tarjeta, el programa finalizado, gracias por preferirnos");
@@ -62,8 +59,6 @@ public class MenuTransacciones{
             Retirar,
             Depositar,
             ConsultarBalance,
-            PagarPrestamo,
-            PagarTarjeta,
             Salir
         }
 }

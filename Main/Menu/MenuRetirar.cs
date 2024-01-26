@@ -15,8 +15,8 @@ public class MenuRetirar{
                                 
                                 GuardarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.cuentaUsuarioLogeado);
                                 System.Console.WriteLine("Retiro exitoso.");
-                                MenuTransferencia.OperacionRealizada=Transacciones.OperacionRetiro(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto);
-                                GuardarJson.GuardarHistorial(MenuTransferencia.OperacionRealizada);
+                                Transacciones.OperacionRetiro(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto);
+                                GuardarJson.GuardarHistorial(Transacciones.operacion);
                                 
                                 break;
                                 

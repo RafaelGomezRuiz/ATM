@@ -2,7 +2,6 @@ public class MenuTransferencia{
     public static int numCuentaDestino;
     public static Cuenta cuentaDestino;
     public static double monto;
-    public static Operaciones OperacionRealizada;
 
     public static void ShowMenuTransferencia()
     {
@@ -30,8 +29,8 @@ public class MenuTransferencia{
 
                                 System.Console.WriteLine("Transferencia exitosa.");
 
-                                OperacionRealizada=Transacciones.OperacionTranferencia(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto);
-                                GuardarJson.GuardarHistorial(OperacionRealizada);
+                                Transacciones.OperacionTranferencia(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto);
+                                GuardarJson.GuardarHistorial(Transacciones.operacion);
                                 break;
                                 
                             }
