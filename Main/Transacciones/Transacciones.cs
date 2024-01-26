@@ -44,4 +44,12 @@ public class Transacciones{
 
         return operacion;
     }
+    public static Operaciones OperacionRetiro(Cuenta cuentaUsuarioLogeado, double monto){
+        operacion.NumeroCuentaUsuario=cuentaUsuarioLogeado.NumeroCuenta;
+        operacion.Operacion="Retiro";
+        operacion.Monto=monto;
+        operacion.Fecha=fechaActual;
+
+        return operacion;
+    }
 }

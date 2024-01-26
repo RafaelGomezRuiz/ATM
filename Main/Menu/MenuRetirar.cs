@@ -14,7 +14,10 @@ public class MenuRetirar{
                                 Transacciones.Retirar(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto); //este metodo recibe la cuenta que se valido al iniciar sesion
                                 
                                 GuardarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.cuentaUsuarioLogeado);
-                                System.Console.WriteLine("Transferencia exitosa.");
+                                System.Console.WriteLine("Retiro exitoso.");
+                                MenuTransferencia.OperacionRealizada=Transacciones.OperacionRetiro(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto);
+                                GuardarJson.GuardarHistorial(MenuTransferencia.OperacionRealizada);
+                                
                                 break;
                                 
                             }

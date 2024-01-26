@@ -44,8 +44,8 @@ public class GuardarJson{
 
     public static void GuardarHistorial(Operaciones operacion){
         HistorialJson.Add(operacion);
-        string? HistorialOpreciones=JsonConvert.SerializeObject(HistorialJson,Formatting.Indented);
-        File.WriteAllText(rutaHistorialOperaciones,HistorialOpreciones);
+        string? HistorialOperaciones=JsonConvert.SerializeObject(HistorialJson,Formatting.Indented);
+        File.WriteAllText(rutaHistorialOperaciones,HistorialOperaciones);
     }
 
     public static void RemoverCuentaJson(Cuenta cuentaUsuario){

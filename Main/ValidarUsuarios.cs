@@ -1,10 +1,10 @@
 public class ValidarUsuarios{
     public static int conteo=0;
-
+    static Cuenta? CuentaUsuario;
     public static Cuenta BuscarCuenta(int numCuenta){
         List<Cuenta> cuentas=LeerJson.LeerCuenta();
         
-        Cuenta? CuentaUsuario=cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
+        CuentaUsuario=cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
         return CuentaUsuario;
     }
 
@@ -23,7 +23,7 @@ public class ValidarUsuarios{
     public static bool CuentaHabilitada(Cuenta CuentaUsuario){
 
         
-         if(CuentaUsuario.EstadoCuenta){
+         if(CuentaUsuario.EstadoCuenta==true){
             return true;
          }
          else{
@@ -51,8 +51,9 @@ public class ValidarUsuarios{
         else if (conteo >= 3)
         {
             System.Console.WriteLine("Haz intentado más de tres veces, su cuenta ha sido inhabilitada.");
-            
+            GuardarJson.RemoverCuentaJson(CuentaUsuario);
             CuentaUsuario.EstadoCuenta = false;
+            GuardarJson.ActualizarCuentasDespuesTransaccion(CuentaUsuario);
             
 
             MenuPrincipal.buclePin = false;

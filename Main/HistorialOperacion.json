@@ -1,30 +1,65 @@
 [
   {
     "NumeroCuentaUsuario": 1,
-    "Operacion": "Transferencia",
-    "NumeroCuentaDestino": 2,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T17:08:53.3638877-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 1,
-    "Operacion": "Transferencia",
-    "NumeroCuentaDestino": 2,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T17:08:53.3638877-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 1,
-    "Operacion": "Transferencia",
+    "Operacion": "Retiro",
     "NumeroCuentaDestino": 3,
-    "Monto": 100.0,
-    "Fecha": "2024-01-25T17:11:21.0791753-04:00"
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T18:37:21.1557827-04:00"
   },
   {
     "NumeroCuentaUsuario": 1,
-    "Operacion": "Transferencia",
+    "Operacion": "Retiro",
     "NumeroCuentaDestino": 3,
-    "Monto": 100.0,
-    "Fecha": "2024-01-25T17:11:21.0791753-04:00"
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T18:37:21.1557827-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 1,
+    "Operacion": "Retiro",
+    "NumeroCuentaDestino": 3,
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T18:37:21.1557827-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 0,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 1,
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T18:47:18.962827-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 0,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 4,
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T18:48:04.0855762-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 3,
+    "Monto": 11.0,
+    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 3,
+    "Monto": 11.0,
+    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 3,
+    "Monto": 11.0,
+    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 3,
+    "Monto": 11.0,
+    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
   }
 ]

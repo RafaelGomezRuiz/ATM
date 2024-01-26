@@ -12,33 +12,43 @@ public class MenuPrincipal
             NumCuenta=int.Parse(Console.ReadLine()!);
             
 
-            if (ValidarUsuarios.ExisteCuenta(NumCuenta) && ValidarUsuarios.CuentaHabilitada(ValidarUsuarios.BuscarCuenta(NumCuenta)) )
-            {
+            if (ValidarUsuarios.ExisteCuenta(NumCuenta)==true )
+            { 
                 cuentaUsuarioLogeado=ValidarUsuarios.BuscarCuenta(NumCuenta);
-                    while(buclePin==true){
-                        Console.WriteLine("Ingrese su PIN (4 dígitos):");
-                        pin = int.Parse(Console.ReadLine()!);
-                        ValidarUsuarios.Credenciales(cuentaUsuarioLogeado,pin);
-                        }
+                if(cuentaUsuarioLogeado != null ){
+                
+                if( (ValidarUsuarios.CuentaHabilitada(cuentaUsuarioLogeado))==false){
+                                    System.Console.WriteLine("Su cuenta esta inhabilitada");
+
                     break;
-                break;
-            }
-            else if (!ValidarUsuarios.CuentaHabilitada(cuentaUsuarioLogeado) )
-            {
-                System.Console.WriteLine("Su cuenta esta inhabilitada");
-                break;
-            }
+                }
+
+                // if(cuentaUsuarioLogeado!=null && ValidarUsuarios.CuentaHabilitada(cuentaUsuarioLogeado)==true )
+                //no importa que tenga el metodo anterior para verificar si la cuenta existe el sistema entiende que en este punto 
+                //cuando se busca la cuenta 
+                        while(buclePin==true){
+                            Console.WriteLine("Ingrese su PIN (4 dígitos):");
+                            pin = int.Parse(Console.ReadLine()!);
+                            ValidarUsuarios.Credenciales(cuentaUsuarioLogeado,pin);
+                            }
+                            break;
+                    
+                        }
+                   }
+            //        else if (cuentaUsuarioLogeado != null && ValidarUsuarios.CuentaHabilitada(cuentaUsuarioLogeado)==false )
+            // {
+            //     System.Console.WriteLine("Su cuenta esta inhabilitada");
+            //     break;
+            // } de esta forma tenia un bug
+            
             else{
                 System.Console.WriteLine("No existe una cuenta con ese numero, intentalo de nuevo: "); //Recuerda cambiar esto que no tiene sentido
                 continue;
             }
-        }
-
-            
-           
+        }     
     }
-
-
-
-
 }
+
+
+
+
