@@ -2,7 +2,7 @@ public class ValidarUsuarios{
     public static int conteo=0;
     static Cuenta? CuentaUsuario;
     public static Cuenta BuscarCuenta(int numCuenta){
-        List<Cuenta> cuentas=LeerJson.LeerCuenta();
+        List<Cuenta>? cuentas=LeerJson.LeerCuenta();
         
         CuentaUsuario=cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
         return CuentaUsuario;
@@ -10,9 +10,9 @@ public class ValidarUsuarios{
 
     public static bool ExisteCuenta(int numCuenta){
 
-        List<Cuenta> cuentas=LeerJson.LeerCuenta();
+        List<Cuenta>? cuentas=LeerJson.LeerCuenta();
         
-        var CuentaUsuario=cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
+        Cuenta? CuentaUsuario=cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
          if(CuentaUsuario!=null){
             return true;
          }

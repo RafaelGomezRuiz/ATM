@@ -15,15 +15,13 @@ public class MenuTransacciones{
         1. Retiro
         2. Deposito
         3. Consultar balance
-        4. Pagar prestamo
-        5. Pagar Tarjeta
-        6. Salir
+        4. Salir
         :
         ");
 
         opcion=int.Parse(Console.ReadLine()!);
 
-        switch ((OperacionCajero)opcion)
+        switch ((OperacionCajero?)opcion)
         {  
             case OperacionCajero.Transferencia:
                 MenuTransferencia.ShowMenuTransferencia();

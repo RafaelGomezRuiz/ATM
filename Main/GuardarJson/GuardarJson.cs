@@ -4,11 +4,11 @@ using Newtonsoft.Json;
 
 public class GuardarJson{
 
-    public const string? rutaUsuarios="usuarios.json"; //las constantes por defecto son estaticas
-    public const string? rutaCuenta="CuentaUsuarios.json";
-    public const string? rutaHistorialOperaciones="HistorialOperacion.json";
+    public const string rutaUsuarios="usuarios.json"; //las constantes por defecto son estaticas
+    public const string rutaCuenta="CuentaUsuarios.json";
+    public const string rutaHistorialOperaciones="HistorialOperacion.json";
 
-    public static List<Cuenta>? cuentasActualesJson= LeerJson.LeerCuenta();
+    public static List<Cuenta> cuentasActualesJson= LeerJson.LeerCuenta();
 
     public static List<Operaciones> HistorialJson= LeerJson.LeerHistorialOperaciones();
 
@@ -49,7 +49,7 @@ public class GuardarJson{
     }
 
     public static void RemoverCuentaJson(Cuenta cuentaUsuario){
-            Cuenta cuenta=cuentasActualesJson.FirstOrDefault(p => p.NumeroCuenta==cuentaUsuario.NumeroCuenta);
+            Cuenta? cuenta=cuentasActualesJson.FirstOrDefault(p => p.NumeroCuenta==cuentaUsuario.NumeroCuenta);
             
             cuentasActualesJson.Remove(cuenta);
     }

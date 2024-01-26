@@ -3,7 +3,7 @@ public class MenuPrincipal
     static public int NumCuenta;
     static public int pin;
     public static  bool buclePin=true;
-    public static Cuenta cuentaUsuarioLogeado;
+    public static Cuenta? cuentaUsuarioLogeado;
 
     public static void ShowMenuCredenciales()
     {

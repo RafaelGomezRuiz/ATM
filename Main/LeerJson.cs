@@ -5,7 +5,7 @@ public class LeerJson{
     public static List<Usuario> LeerUsuario(){
 
         string? JsonUsuario = File.ReadAllText(GuardarJson.rutaUsuarios);
-        List<Usuario> usuario = JsonConvert.DeserializeObject<List<Usuario>>(JsonUsuario);
+        List<Usuario>? usuario = JsonConvert.DeserializeObject<List<Usuario>>(JsonUsuario);
         
         return usuario;
     }
@@ -13,7 +13,7 @@ public class LeerJson{
     public static List<Cuenta> LeerCuenta(){
 
        string? JsonCuenta=File.ReadAllText(GuardarJson.rutaCuenta); 
-       List<Cuenta> cuentas=JsonConvert.DeserializeObject<List<Cuenta>>(JsonCuenta);
+       List<Cuenta>? cuentas=JsonConvert.DeserializeObject<List<Cuenta>>(JsonCuenta);
        return cuentas;
     }
 
@@ -22,7 +22,7 @@ public class LeerJson{
         if (File.Exists(GuardarJson.rutaHistorialOperaciones)){
 
             string? JsonHistorial=File.ReadAllText(GuardarJson.rutaHistorialOperaciones);
-            List<Operaciones> operacion=JsonConvert.DeserializeObject<List<Operaciones>>(JsonHistorial);
+            List<Operaciones>? operacion=JsonConvert.DeserializeObject<List<Operaciones>>(JsonHistorial);
                 return operacion;
             }
         else{    

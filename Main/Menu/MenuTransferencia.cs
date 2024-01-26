@@ -1,7 +1,8 @@
 public class MenuTransferencia{
     public static int numCuentaDestino;
-    public static Cuenta cuentaDestino;
+    public static Cuenta? cuentaDestino;
     public static double monto;
+    public static Operaciones? OperacionRealizada;
 
     public static void ShowMenuTransferencia()
     {
@@ -29,8 +30,21 @@ public class MenuTransferencia{
 
                                 System.Console.WriteLine("Transferencia exitosa.");
 
-                                Transacciones.OperacionTranferencia(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto);
-                                GuardarJson.GuardarHistorial(Transacciones.operacion);
+                                OperacionRealizada=Transacciones.OperacionTranferencia(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto);
+                                GuardarJson.GuardarHistorial(OperacionRealizada);
+                                System.Console.WriteLine("¿Desea un recibo? (1.Sí/2.No): ");
+                                int respuestaRecibo = int.Parse(Console.ReadLine()!);
+
+                                if (respuestaRecibo == 1)
+                                {
+                                    Recibo.ImprimirReciboTransferencia(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, MenuTransferencia.monto);
+                                }
+                                else if(respuestaRecibo == 2){
+                                    System.Console.WriteLine("Gracias por preferirnos");
+                                }
+                                else{
+                                    System.Console.WriteLine("Valor incorrecto");
+                                }
                                 break;
                                 
                             }
