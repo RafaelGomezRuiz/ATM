@@ -173,5 +173,26 @@
     "NumeroCuentaDestino": 1,
     "Monto": 11.0,
     "Fecha": "2024-01-25T22:40:53.3006193-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Retiro",
+    "NumeroCuentaDestino": 0,
+    "Monto": 10.0,
+    "Fecha": "2024-01-25T22:58:38.0716817-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 0,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 1,
+    "Monto": 1.0,
+    "Fecha": "2024-01-25T22:59:48.6542327-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Transferencia",
+    "NumeroCuentaDestino": 3,
+    "Monto": 5.0,
+    "Fecha": "2024-01-25T23:00:09.4018632-04:00"
   }
 ]

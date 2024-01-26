@@ -25,6 +25,21 @@ public class MenuDepositar{
 
                                 Transacciones.OperacionDeposito(MenuTransferencia.cuentaDestino, MenuTransferencia.monto);
                                 GuardarJson.GuardarHistorial(Transacciones.operacion);
+
+                                System.Console.WriteLine("¿Desea un recibo? (1.Sí/2.No): ");
+                                int respuestaRecibo = int.Parse(Console.ReadLine()!);
+
+                                if (respuestaRecibo == 1)
+                                {
+                                    Recibo.ImprimirReciboDeposito(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto);
+                                }
+                                else if(respuestaRecibo == 2){
+                                    System.Console.WriteLine("Gracias por preferirnos");
+                                }
+                                else{
+                                    System.Console.WriteLine("Valor incorrecto");
+                                }
+
                                 break;
                                 
                             }
