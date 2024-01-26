@@ -15,34 +15,6 @@
   },
   {
     "Usuario": {
-      "Nombre": "Oliver Betances",
-      "Cedula": "4022000",
-      "Correo": "olioli@gmail.com",
-      "Telefono": 806803
-    },
-    "FechaCreacion": "2024-01-23T15:58:20.5118211-04:00",
-    "NumeroCuenta": 3,
-    "Pin": 1234,
-    "Saldo": 70061.0,
-    "TipoCuenta": "ahorros",
-    "EstadoCuenta": true
-  },
-  {
-    "Usuario": {
-      "Nombre": "Huasca Buryes",
-      "Cedula": "4022000",
-      "Correo": "Aldedilloz@gmail.com",
-      "Telefono": 806803
-    },
-    "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
-    "NumeroCuenta": 2,
-    "Pin": 1234,
-    "Saldo": 46210.0,
-    "TipoCuenta": "corriente",
-    "EstadoCuenta": true
-  },
-  {
-    "Usuario": {
       "Nombre": "rafael gomez",
       "Cedula": "4022067",
       "Correo": "Rafaxxzz@gmail.com",
@@ -54,5 +26,33 @@
     "Saldo": 1420.0,
     "TipoCuenta": "ahorros",
     "EstadoCuenta": false
+  },
+  {
+    "Usuario": {
+      "Nombre": "Huasca Buryes",
+      "Cedula": "4022000",
+      "Correo": "Aldedilloz@gmail.com",
+      "Telefono": 806803
+    },
+    "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+    "NumeroCuenta": 2,
+    "Pin": 1234,
+    "Saldo": 46196.0,
+    "TipoCuenta": "corriente",
+    "EstadoCuenta": true
+  },
+  {
+    "Usuario": {
+      "Nombre": "Oliver Betances",
+      "Cedula": "4022000",
+      "Correo": "olioli@gmail.com",
+      "Telefono": 806803
+    },
+    "FechaCreacion": "2024-01-23T15:58:20.5118211-04:00",
+    "NumeroCuenta": 3,
+    "Pin": 1234,
+    "Saldo": 70066.0,
+    "TipoCuenta": "ahorros",
+    "EstadoCuenta": true
   }
 ]
