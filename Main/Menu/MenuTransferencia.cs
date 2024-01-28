@@ -34,7 +34,7 @@ public class MenuTransferencia{
 
                                 if (respuestaRecibo == 1)
                                 {
-                                    //Recibo.ImprimirReciboTransferencia(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, MenuTransferencia.monto);
+                                    Recibo.ImprimirReciboTransferencia(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, MenuTransferencia.monto);
                                 }
                                 else if(respuestaRecibo == 2){
                                     System.Console.WriteLine("Gracias por preferirnos");

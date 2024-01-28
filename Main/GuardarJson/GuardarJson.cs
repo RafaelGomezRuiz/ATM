@@ -50,7 +50,7 @@ public class GuardarJson{
             //ya tengo la cuenta del ususario logeado
             UsuariosActualesJson.Remove(ValidarUsuarios.UsuarioLogeado);
 
-            ValidarUsuarios.UsuarioLogeado.Productos.Cuentas.Remove(MenuPrincipal.cuentaUsuarioLogeado);
+            ValidarUsuarios.UsuarioLogeado.Productos.Cuentas.Remove(cuentaUsuario);
 
             
     }

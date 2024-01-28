@@ -1,25 +1,5 @@
 [
   {
-    "Nombre": "rafael gomez",
-    "Cedula": "4022067",
-    "Correo": "Rafaxxzz@gmail.com",
-    "Telefono": 806954,
-    "Productos": {
-      "Cuentas": [
-        {
-          "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
-          "NumeroCuenta": 1,
-          "Pin": 1234,
-          "Saldo": 1420.0,
-          "TipoCuenta": "ahorros",
-          "EstadoCuenta": false
-        }
-      ],
-      "Prestamos": null,
-      "Tarjetas": null
-    }
-  },
-  {
     "Nombre": "Huasca Buryes",
     "Cedula": "4022000",
     "Correo": "Aldedilloz@gmail.com",
@@ -30,7 +10,7 @@
           "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
           "NumeroCuenta": 2,
           "Pin": 1234,
-          "Saldo": 46196.0,
+          "Saldo": 46194.0,
           "TipoCuenta": "corriente",
           "EstadoCuenta": true
         }
@@ -73,6 +53,106 @@
           "Saldo": 90000.0,
           "TipoCuenta": "corriente",
           "EstadoCuenta": true
+        }
+      ],
+      "Prestamos": null,
+      "Tarjetas": null
+    }
+  },
+  {
+    "Nombre": "rafael gomez",
+    "Cedula": "4022067",
+    "Correo": "Rafaxxzz@gmail.com",
+    "Telefono": 806954,
+    "Productos": {
+      "Cuentas": [
+        {
+          "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+          "NumeroCuenta": 2,
+          "Pin": 1234,
+          "Saldo": 46195.0,
+          "TipoCuenta": "corriente",
+          "EstadoCuenta": true
+        },
+        {
+          "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
+          "NumeroCuenta": 1,
+          "Pin": 1234,
+          "Saldo": 1421.0,
+          "TipoCuenta": "ahorros",
+          "EstadoCuenta": false
+        }
+      ],
+      "Prestamos": null,
+      "Tarjetas": null
+    }
+  },
+  {
+    "Nombre": "rafael gomez",
+    "Cedula": "4022067",
+    "Correo": "Rafaxxzz@gmail.com",
+    "Telefono": 806954,
+    "Productos": {
+      "Cuentas": [
+        {
+          "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+          "NumeroCuenta": 2,
+          "Pin": 1234,
+          "Saldo": 46195.0,
+          "TipoCuenta": "corriente",
+          "EstadoCuenta": true
+        },
+        {
+          "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+          "NumeroCuenta": 2,
+          "Pin": 1234,
+          "Saldo": 46194.0,
+          "TipoCuenta": "corriente",
+          "EstadoCuenta": true
+        },
+        {
+          "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
+          "NumeroCuenta": 1,
+          "Pin": 1234,
+          "Saldo": 1422.0,
+          "TipoCuenta": "ahorros",
+          "EstadoCuenta": false
+        }
+      ],
+      "Prestamos": null,
+      "Tarjetas": null
+    }
+  },
+  {
+    "Nombre": "rafael gomez",
+    "Cedula": "4022067",
+    "Correo": "Rafaxxzz@gmail.com",
+    "Telefono": 806954,
+    "Productos": {
+      "Cuentas": [
+        {
+          "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+          "NumeroCuenta": 2,
+          "Pin": 1234,
+          "Saldo": 46195.0,
+          "TipoCuenta": "corriente",
+          "EstadoCuenta": true
+        },
+        {
+          "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+          "NumeroCuenta": 2,
+          "Pin": 1234,
+          "Saldo": 46194.0,
+          "TipoCuenta": "corriente",
+          "EstadoCuenta": true
+        },
+        {
+          "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
+          "NumeroCuenta": 1,
+          "Pin": 1234,
+          "Saldo": 1422.0,
+          "TipoCuenta": "ahorros",
+          "EstadoCuenta": false
         }
       ],
       "Prestamos": null,
