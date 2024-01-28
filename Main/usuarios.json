@@ -4,7 +4,7 @@
     "Cedula": "4022067",
     "Correo": "Rafaxxzz@gmail.com",
     "Telefono": 806954,
-    "producto": {
+    "Productos": {
       "Cuentas": [
         {
           "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
@@ -24,7 +24,7 @@
     "Cedula": "4022000",
     "Correo": "Aldedilloz@gmail.com",
     "Telefono": 806803,
-    "producto": {
+    "Productos": {
       "Cuentas": [
         {
           "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
@@ -44,7 +44,7 @@
     "Cedula": "4022000",
     "Correo": "olioli@gmail.com",
     "Telefono": 806803,
-    "producto": {
+    "Productos": {
       "Cuentas": [
         {
           "FechaCreacion": "2024-01-23T15:58:20.5118211-04:00",
@@ -64,7 +64,7 @@
     "Cedula": "4022000",
     "Correo": "Ozhuna@gmail.com",
     "Telefono": 806803,
-    "producto": {
+    "Productos": {
       "Cuentas": [
         {
           "FechaCreacion": "2024-01-23T15:58:30.4269582-04:00",

@@ -3,10 +3,11 @@ public class ValidarUsuarios{
     static Cuenta? CuentaUsuario;
     
     public static Cuenta BuscarCuenta(int numCuenta){
-
+        
         //buscar usuario que tenga cuentas y que el numero sea igual .... Tenemos que usar any para que sea booleana la respuesta ya que firstOrDefault devuelve un tipo Cuenta
         Usuario? cuenta=GuardarJson.UsuariosActualesJson.FirstOrDefault(u=>u.Productos.Cuentas !=null && u.Productos.Cuentas.Any(b => b.NumeroCuenta==numCuenta));
-        if(cuenta != null && cuenta!= null){
+        
+        if(cuenta != null && cuenta.Productos.Cuentas != null){
             CuentaUsuario=cuenta.Productos.Cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
             if(CuentaUsuario!=null){  
                 return CuentaUsuario;    
