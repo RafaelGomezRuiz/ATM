@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 public class GuardarJson{
 
     public const string rutaUsuarios="usuarios.json"; //las constantes por defecto son estaticas
-    public const string rutaCuenta="CuentaUsuarios.json";
+    //public const string rutaCuenta="CuentaUsuarios.json";
     public const string rutaHistorialOperaciones="HistorialOperacion.json";
 
     public static List<Usuario> UsuariosActualesJson= LeerJson.LeerUsuario();
@@ -22,25 +22,23 @@ public class GuardarJson{
         string? Json=JsonConvert.SerializeObject(usuario,Formatting.Indented);
         File.WriteAllText(rutaUsuarios,Json);
     }
-    public static void GuardarCuenta(List<Cuenta> cuentas){
 
-        string? cuentaJson=JsonConvert.SerializeObject(cuentas, Formatting.Indented);
-        File.WriteAllText(rutaCuenta,cuentaJson);
-    }
     
-    public static void GuardarCuentaActualizada(List<Cuenta> cuentas){
+    
+    public static void GuardarCuentaActualizada(List<Usuario> cuentas){
         
         string? cuentaJsonActualizada=JsonConvert.SerializeObject(cuentas, Formatting.Indented);
-        File.WriteAllText(rutaCuenta,cuentaJsonActualizada);
+        File.WriteAllText(rutaUsuarios,cuentaJsonActualizada);
     }
 
-    /*public static void ActualizarCuentasDespuesTransaccion(Cuenta cuentaUsuario){
+    public static void ActualizarCuentasDespuesTransaccion(Cuenta cuentaUsuario) {//recuerda que esta es la cuenta del usuario logeado
         
                 //leer cuenta tiene las cuentas dezerializadas
-                cuentasActualesJson.Add(cuentaUsuario);
- 
-                GuardarJson.GuardarCuentaActualizada(cuentasActualesJson);
-    }*/
+                
+                ValidarUsuarios.UsuarioLogeado.Productos.Cuentas.Add(cuentaUsuario);
+                UsuariosActualesJson.Add(ValidarUsuarios.UsuarioLogeado);
+                GuardarJson.GuardarCuentaActualizada(UsuariosActualesJson);
+    }
 
     public static void GuardarHistorial(Operaciones operacion){
         HistorialJson.Add(operacion);
@@ -48,10 +46,13 @@ public class GuardarJson{
         File.WriteAllText(rutaHistorialOperaciones,HistorialOperaciones);
     }
 
-    /*public static void RemoverCuentaJson(Cuenta cuentaUsuario){
-            Cuenta? cuenta=cuentasActualesJson.FirstOrDefault(p => p.NumeroCuenta==cuentaUsuario.NumeroCuenta);
+    public static void RemoverCuentaJson(Cuenta cuentaUsuario){
+            //ya tengo la cuenta del ususario logeado
+            UsuariosActualesJson.Remove(ValidarUsuarios.UsuarioLogeado);
+
+            ValidarUsuarios.UsuarioLogeado.Productos.Cuentas.Remove(MenuPrincipal.cuentaUsuarioLogeado);
+
             
-            cuentasActualesJson.Remove(cuenta);
-    }*/
+    }
 
 }

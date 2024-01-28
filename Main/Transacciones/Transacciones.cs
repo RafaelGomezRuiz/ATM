@@ -1,8 +1,8 @@
 public class Transacciones{
-/*    //public string? NombreUsuario{get;set;}
-        public static Operaciones operacion= new Operaciones();
+    
+    public static Operaciones operacion= new Operaciones();
 
-    public static DateTime fechaActual=DateTime.Now;
+    public static DateTime fechaActual=DateTime.Now;//cambialo
 
     
     public static void Transferir(Cuenta cuentaOrigen, Cuenta cuentaDestino, double monto)
@@ -10,6 +10,8 @@ public class Transacciones{
         cuentaOrigen.Saldo-=monto;
         cuentaDestino.Saldo+=monto;
     }
+
+    /*
     public static void Retirar(Cuenta cuentaOrigen, double monto)
     {
         cuentaOrigen.Saldo-=monto;

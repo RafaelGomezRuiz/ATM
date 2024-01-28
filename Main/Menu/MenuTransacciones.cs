@@ -1,6 +1,6 @@
 public class MenuTransacciones{
 
-    /*public static int opcion;
+    public static int opcion;
     public static bool bucle=true;
 
     public static void ShowMenuTransacciones()
@@ -27,19 +27,19 @@ public class MenuTransacciones{
                 bucle=false;
                 break;
             case OperacionCajero.Retirar:
-                MenuRetirar.ShowMenuRetirar();
+                //MenuRetirar.ShowMenuRetirar();
                 bucle=false;
                 break;
             case OperacionCajero.Depositar:
-                MenuDepositar.ShowMenuDepositar();
+                //MenuDepositar.ShowMenuDepositar();
                 bucle=false;
                 break;
             case OperacionCajero.ConsultarBalance:
-                Transacciones.ConsultarBalance(MenuPrincipal.cuentaUsuarioLogeado);
+                //Transacciones.ConsultarBalance(MenuPrincipal.cuentaUsuarioLogeado);
                 bucle=false;
                 break;
             case OperacionCajero.Salir:
-                    System.Console.WriteLine("Retire su tarjeta, el programa finalizado, gracias por preferirnos");
+                System.Console.WriteLine("Retire su tarjeta, el programa finalizado, gracias por preferirnos");
                 bucle=false;
                 break;
         
@@ -57,5 +57,5 @@ public class MenuTransacciones{
             Depositar,
             ConsultarBalance,
             Salir
-        }*/
+        }
 }

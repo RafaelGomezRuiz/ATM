@@ -1,198 +1,33 @@
 [
-  {
-    "NumeroCuentaUsuario": 1,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T18:37:21.1557827-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 1,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T18:37:21.1557827-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 1,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T18:37:21.1557827-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 0,
-    "Operacion": "Deposito",
-    "NumeroCuentaDestino": 1,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T18:47:18.962827-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 0,
-    "Operacion": "Deposito",
-    "NumeroCuentaDestino": 4,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T18:48:04.0855762-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 3,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T20:46:47.4766792-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 0,
-    "Operacion": "Deposito",
-    "NumeroCuentaDestino": 1,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T20:52:55.9028591-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 30.0,
-    "Fecha": "2024-01-25T20:53:32.8959795-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 30.0,
-    "Fecha": "2024-01-25T20:53:32.8959795-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Transferencia",
-    "NumeroCuentaDestino": 3,
-    "Monto": 20.0,
-    "Fecha": "2024-01-25T21:24:20.5879028-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Transferencia",
-    "NumeroCuentaDestino": 3,
-    "Monto": 20.0,
-    "Fecha": "2024-01-25T21:24:20.5879028-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Deposito",
-    "NumeroCuentaDestino": 1,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T21:54:57.1057107-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Deposito",
-    "NumeroCuentaDestino": 1,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T21:54:57.1057107-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 20.0,
-    "Fecha": "2024-01-25T22:07:17.7819692-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 20.0,
-    "Fecha": "2024-01-25T22:07:17.7819692-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 15.0,
-    "Fecha": "2024-01-25T22:08:46.1104179-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 15.0,
-    "Fecha": "2024-01-25T22:08:46.1104179-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 2.0,
-    "Fecha": "2024-01-25T22:14:59.6390252-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 2.0,
-    "Fecha": "2024-01-25T22:14:59.6390252-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Transferencia",
-    "NumeroCuentaDestino": 1,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T22:37:11.6414899-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Transferencia",
-    "NumeroCuentaDestino": 1,
-    "Monto": 11.0,
-    "Fecha": "2024-01-25T22:40:53.3006193-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Retiro",
-    "NumeroCuentaDestino": 0,
-    "Monto": 10.0,
-    "Fecha": "2024-01-25T22:58:38.0716817-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 0,
-    "Operacion": "Deposito",
-    "NumeroCuentaDestino": 1,
-    "Monto": 1.0,
-    "Fecha": "2024-01-25T22:59:48.6542327-04:00"
-  },
-  {
-    "NumeroCuentaUsuario": 2,
-    "Operacion": "Transferencia",
-    "NumeroCuentaDestino": 3,
-    "Monto": 5.0,
-    "Fecha": "2024-01-25T23:00:09.4018632-04:00"
-  }
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  null,
+  null,
+  null
 ]
