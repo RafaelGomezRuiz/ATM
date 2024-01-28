@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gsant\\Programacionll\\ATM\\main\\ATM.csproj": {}
+    "C:\\Users\\gsant\\Programacionll\\ATM\\Main\\ATM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gsant\\Programacionll\\ATM\\main\\ATM.csproj": {
+    "C:\\Users\\gsant\\Programacionll\\ATM\\Main\\ATM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gsant\\Programacionll\\ATM\\main\\ATM.csproj",
+        "projectUniqueName": "C:\\Users\\gsant\\Programacionll\\ATM\\Main\\ATM.csproj",
         "projectName": "ATM",
-        "projectPath": "C:\\Users\\gsant\\Programacionll\\ATM\\main\\ATM.csproj",
+        "projectPath": "C:\\Users\\gsant\\Programacionll\\ATM\\Main\\ATM.csproj",
         "packagesPath": "C:\\Users\\gsant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gsant\\Programacionll\\ATM\\main\\obj\\",
+        "outputPath": "C:\\Users\\gsant\\Programacionll\\ATM\\Main\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gsant\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,11 +1,11 @@
 public class MenuTransacciones{
 
-    public static int opcion;
+    /*public static int opcion;
     public static bool bucle=true;
 
     public static void ShowMenuTransacciones()
     {
-       /* while (bucle)
+        while (bucle)
         {
         System.Console.WriteLine(@"
         Que operacion deseas realizar?

@@ -1,6 +1,7 @@
 public class ValidarUsuarios{
     public static int conteo=0;
     static Cuenta? CuentaUsuario;
+    
     public static Cuenta BuscarCuenta(int numCuenta){
         List<Cuenta>? cuentas=LeerJson.LeerCuenta();
         
@@ -37,7 +38,7 @@ public class ValidarUsuarios{
 
     if (PinUser == pin)
     {
-        MenuTransacciones.ShowMenuTransacciones();
+        //MenuTransacciones.ShowMenuTransacciones();
         MenuPrincipal.buclePin = false;
     }
     else if (PinUser != pin)
