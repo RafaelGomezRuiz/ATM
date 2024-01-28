@@ -8,7 +8,7 @@ public class GuardarJson{
     public const string rutaCuenta="CuentaUsuarios.json";
     public const string rutaHistorialOperaciones="HistorialOperacion.json";
 
-    public static List<Cuenta> cuentasActualesJson= LeerJson.LeerCuenta();
+    public static List<Usuario> UsuariosActualesJson= LeerJson.LeerUsuario();
 
     public static List<Operaciones> HistorialJson= LeerJson.LeerHistorialOperaciones();
 
@@ -34,13 +34,13 @@ public class GuardarJson{
         File.WriteAllText(rutaCuenta,cuentaJsonActualizada);
     }
 
-    public static void ActualizarCuentasDespuesTransaccion(Cuenta cuentaUsuario){
+    /*public static void ActualizarCuentasDespuesTransaccion(Cuenta cuentaUsuario){
         
                 //leer cuenta tiene las cuentas dezerializadas
                 cuentasActualesJson.Add(cuentaUsuario);
  
                 GuardarJson.GuardarCuentaActualizada(cuentasActualesJson);
-    }
+    }*/
 
     public static void GuardarHistorial(Operaciones operacion){
         HistorialJson.Add(operacion);
@@ -48,10 +48,10 @@ public class GuardarJson{
         File.WriteAllText(rutaHistorialOperaciones,HistorialOperaciones);
     }
 
-    public static void RemoverCuentaJson(Cuenta cuentaUsuario){
+    /*public static void RemoverCuentaJson(Cuenta cuentaUsuario){
             Cuenta? cuenta=cuentasActualesJson.FirstOrDefault(p => p.NumeroCuenta==cuentaUsuario.NumeroCuenta);
             
             cuentasActualesJson.Remove(cuenta);
-    }
+    }*/
 
 }

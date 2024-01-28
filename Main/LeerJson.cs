@@ -10,12 +10,7 @@ public class LeerJson{
         return usuario;
     }
 
-    public static List<Cuenta> LeerCuenta(){
-
-       string? JsonCuenta=File.ReadAllText(GuardarJson.rutaCuenta); 
-       List<Cuenta>? cuentas=JsonConvert.DeserializeObject<List<Cuenta>>(JsonCuenta);
-       return cuentas;
-    }
+    
 
     public static List<Operaciones> LeerHistorialOperaciones()
     {

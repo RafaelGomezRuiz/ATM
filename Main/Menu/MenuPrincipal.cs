@@ -12,8 +12,6 @@ public class MenuPrincipal
             NumCuenta=int.Parse(Console.ReadLine()!);
             
 
-            if (ValidarUsuarios.ExisteCuenta(NumCuenta)==true )
-            { 
                 cuentaUsuarioLogeado=ValidarUsuarios.BuscarCuenta(NumCuenta);
                 if(cuentaUsuarioLogeado != null ){
                 
@@ -40,14 +38,10 @@ public class MenuPrincipal
             //     System.Console.WriteLine("Su cuenta esta inhabilitada");
             //     break;
             // } de esta forma tenia un bug
-            
-            else{
-                System.Console.WriteLine("No existe una cuenta con ese numero, intentalo de nuevo: "); //Recuerda cambiar esto que no tiene sentido
-                continue;
-            }
+
         }     
-    }
 }
+
 
 
 

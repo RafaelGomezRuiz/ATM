@@ -4,10 +4,10 @@ public class Usuario
     public string? Cedula { get; set; }
     public string? Correo { get; set; }
     public int Telefono { get; set; }
-    public Productos producto {get;set;}
+    public Productos Productos {get;set;}
 
     public Usuario(){
-        producto= new Productos(); //cada vez que se instancie la clase se creara una lista de productos por defecto null
+        Productos= new Productos(); //cada vez que se instancie la clase se creara una lista de productos por defecto null
     }
     
     public static List<Usuario> GuardarUsuarios(){
