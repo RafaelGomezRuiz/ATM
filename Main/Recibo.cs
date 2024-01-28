@@ -1,6 +1,6 @@
 public class Recibo
 {
-    public static void ImprimirReciboRetiro(Cuenta cuenta, double monto)
+    /*public static void ImprimirReciboRetiro(Cuenta cuenta, double monto)
     {
         Console.WriteLine("Recibo de Retiro");
         Console.WriteLine($"Cuenta: {cuenta.NumeroCuenta}");
@@ -26,5 +26,5 @@ public class Recibo
         Console.WriteLine($"Monto Depositado: {monto}");
         Console.WriteLine($"Saldo Actual: {cuenta.Saldo}");
         Console.WriteLine("¡Gracias por usar nuestro servicio!");
-    }
+    }*/
 }

@@ -1,5 +1,5 @@
 public class Transacciones{
-    //public string? NombreUsuario{get;set;}
+/*    //public string? NombreUsuario{get;set;}
         public static Operaciones operacion= new Operaciones();
 
     public static DateTime fechaActual=DateTime.Now;
@@ -50,4 +50,5 @@ public class Transacciones{
         operacion.Fecha=fechaActual;
         return operacion;
     }
+    */
 }

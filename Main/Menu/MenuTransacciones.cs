@@ -5,8 +5,7 @@ public class MenuTransacciones{
 
     public static void ShowMenuTransacciones()
     {
-        Console.Title=$"Bienvenido {MenuPrincipal.cuentaUsuarioLogeado.Usuario.Nombre}"; 
-        while (bucle)
+       /* while (bucle)
         {
         System.Console.WriteLine(@"
         Que operacion deseas realizar?
@@ -58,5 +57,5 @@ public class MenuTransacciones{
             Depositar,
             ConsultarBalance,
             Salir
-        }
+        }*/
 }

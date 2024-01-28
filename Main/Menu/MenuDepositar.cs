@@ -1,6 +1,6 @@
 public class MenuDepositar{
  
-    public static void ShowMenuDepositar()
+    /*public static void ShowMenuDepositar()
     {   
         System.Console.WriteLine("Ingresa el numero de cuenta :");
         MenuTransferencia.numCuentaDestino=int.Parse(Console.ReadLine()!);
@@ -57,5 +57,5 @@ public class MenuDepositar{
     else{
         System.Console.WriteLine("Esa cuenta no existe");
     }
-    }
+    }*/
 }

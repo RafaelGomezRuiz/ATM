@@ -1,6 +1,6 @@
 public class MenuRetirar{
  
-    public static void ShowMenuRetirar()
+    /*public static void ShowMenuRetirar()
     {
         while(true)
             {
@@ -45,5 +45,5 @@ public class MenuRetirar{
                             continue;
                         }
             }
-    }
+    }*/
 }

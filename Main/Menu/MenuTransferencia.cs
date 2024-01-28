@@ -1,5 +1,5 @@
 public class MenuTransferencia{
-    public static int numCuentaDestino;
+    /*public static int numCuentaDestino;
     public static Cuenta? cuentaDestino;
     public static double monto;
     public static Operaciones? OperacionRealizada;
@@ -63,5 +63,5 @@ public class MenuTransferencia{
             System.Console.WriteLine("No existe cuenta con ese numero, presiona cualquier tecla para continuar");
             Console.ReadKey();
         }
-    }
+    }*/
 }
