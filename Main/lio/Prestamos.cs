@@ -1,8 +1,6 @@
     public class Prestamos
     {
-        public double IngresosMensuales { get; set; }
-        public double OtrosIngresos { get; set; }
-        public double DeudasActuales { get; set; }
+        public double Id { get; set; }
         public double Monto { get; set; }
         public int PlazoMeses { get; set; }
         public double TasaInteres { get; set; }

@@ -4,20 +4,53 @@
     "Operacion": "Transferencia",
     "NumeroCuentaDestino": 1,
     "Monto": 1.0,
-    "Fecha": "2024-01-29T15:38:41.0917639-04:00"
+    "Fecha": "2024-01-29T15:38:41.0917639-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
   },
   {
     "NumeroCuentaUsuario": 2,
     "Operacion": "Retiro",
     "NumeroCuentaDestino": 0,
     "Monto": 1.0,
-    "Fecha": "2024-01-29T15:48:48.3461389-04:00"
+    "Fecha": "2024-01-29T15:48:48.3461389-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
   },
   {
     "NumeroCuentaUsuario": 2,
     "Operacion": "Retiro",
     "NumeroCuentaDestino": 0,
     "Monto": 1.0,
-    "Fecha": "2024-01-29T15:49:25.7804673-04:00"
+    "Fecha": "2024-01-29T15:49:25.7804673-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
+  },
+  {
+    "NumeroCuentaUsuario": 0,
+    "Operacion": "Deposito",
+    "NumeroCuentaDestino": 1,
+    "Monto": 1.0,
+    "Fecha": "2024-01-29T16:08:51.9924506-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Consultar balance",
+    "NumeroCuentaDestino": 0,
+    "Monto": 0.0,
+    "Fecha": "2024-01-29T16:29:47.1961028-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Consultar balance",
+    "NumeroCuentaDestino": 0,
+    "Monto": 0.0,
+    "Fecha": "2024-01-29T16:44:25.4493049-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
   }
 ]

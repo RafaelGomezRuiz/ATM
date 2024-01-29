@@ -24,7 +24,6 @@ public class Recibo
         Console.WriteLine("Recibo de Depósito");
         Console.WriteLine($"Cuenta: {cuenta.NumeroCuenta}");
         Console.WriteLine($"Monto Depositado: {monto}");
-        Console.WriteLine($"Saldo Actual: {cuenta.Saldo}");
         Console.WriteLine("¡Gracias por usar nuestro servicio!");
     }
 }

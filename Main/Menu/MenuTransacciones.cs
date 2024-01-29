@@ -31,11 +31,13 @@ public class MenuTransacciones{
                 bucle=false;
                 break;
             case OperacionCajero.Depositar:
-                //MenuDepositar.ShowMenuDepositar();
+                MenuDepositar.ShowMenuDepositar();
                 bucle=false;
                 break;
             case OperacionCajero.ConsultarBalance:
-                //Transacciones.ConsultarBalance(MenuPrincipal.cuentaUsuarioLogeado);
+                
+                MenuTransferencia.OperacionRealizada=Transacciones.ConsultarBalance(MenuPrincipal.cuentaUsuarioLogeado);;
+                GuardarJson.GuardarHistorial(MenuTransferencia.OperacionRealizada);
                 bucle=false;
                 break;
             case OperacionCajero.Salir:
