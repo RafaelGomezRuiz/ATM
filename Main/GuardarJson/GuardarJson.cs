@@ -31,14 +31,7 @@ public class GuardarJson{
         File.WriteAllText(rutaUsuarios,cuentaJsonActualizada);
     }
 
-    public static void ActualizarCuentasDespuesTransaccion(Cuenta cuentaUsuario) {//recuerda que esta es la cuenta del usuario logeado
-        
-                //leer cuenta tiene las cuentas dezerializadas
-                
-                ValidarUsuarios.UsuarioLogeado.Productos.Cuentas.Add(cuentaUsuario);
-                UsuariosActualesJson.Add(ValidarUsuarios.UsuarioLogeado);
-                GuardarJson.GuardarCuentaActualizada(UsuariosActualesJson);
-    }
+    
 
     public static void GuardarHistorial(Operaciones operacion){
         HistorialJson.Add(operacion);
@@ -46,13 +39,6 @@ public class GuardarJson{
         File.WriteAllText(rutaHistorialOperaciones,HistorialOperaciones);
     }
 
-    public static void RemoverCuentaJson(Cuenta cuentaUsuario){
-            //ya tengo la cuenta del ususario logeado
-            UsuariosActualesJson.Remove(ValidarUsuarios.UsuarioLogeado);
 
-            ValidarUsuarios.UsuarioLogeado.Productos.Cuentas.Remove(cuentaUsuario);
-
-            
-    }
 
 }

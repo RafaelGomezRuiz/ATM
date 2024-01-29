@@ -1,18 +1,19 @@
 public class MenuPrincipal
 {
-    static public int NumCuenta;
+    static public int NumCuentaLogeado;
     static public int pin;
     public static  bool buclePin=true;
     public static Cuenta? cuentaUsuarioLogeado;
+    public static Usuario? UsuarioLogeado;
 
     public static void ShowMenuCredenciales()
     {
         while(true){
         Console.WriteLine("Ingrese su numero de cuenta: ");
-            NumCuenta=int.Parse(Console.ReadLine()!);
+            NumCuentaLogeado=int.Parse(Console.ReadLine()!);
             
-
-                cuentaUsuarioLogeado=ValidarUsuarios.BuscarCuenta(NumCuenta);
+                UsuarioLogeado=ValidarUsuarios.BuscarUsuario(NumCuentaLogeado);
+                cuentaUsuarioLogeado=ValidarUsuarios.BuscarCuenta(NumCuentaLogeado);
                 if(cuentaUsuarioLogeado != null ){
                 
                 if( (ValidarUsuarios.CuentaHabilitada(cuentaUsuarioLogeado))==false){

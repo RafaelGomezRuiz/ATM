@@ -6,9 +6,10 @@ public class Usuario
     public int Telefono { get; set; }
     public Productos Productos {get;set;}
 
-    public Usuario(){
-        Productos= new Productos(); //cada vez que se instancie la clase se creara una lista de productos por defecto null
-    }
+    public override string ToString()
+{
+    return $"Nombre: {Nombre}, Cedula: {Cedula}, Correo: {Correo}, Telefono: {Telefono}, {Productos}";
+}
     
     public static List<Usuario> GuardarUsuarios(){
         List<Usuario>? ResgisUsuario=new List<Usuario>{

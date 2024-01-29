@@ -9,21 +9,27 @@ public class MenuTransferencia{
         System.Console.WriteLine("Ingresa el numero de cuenta :");
         numCuentaDestino=int.Parse(Console.ReadLine()!);
         while(true)
-            {
+            {   //hayq que validar que la cuenta se encuentre
+                
+                ValidarUsuarios.usuarioDestino=ValidarUsuarios.BuscarUsuario(numCuentaDestino);
                 cuentaDestino=ValidarUsuarios.BuscarCuenta(numCuentaDestino);
-                System.Console.WriteLine("Ingresa el monto: ");
-                monto=double.Parse(Console.ReadLine()!);
+
+                if(ValidarUsuarios.usuarioDestino !=null && cuentaDestino !=null){
+                    System.Console.WriteLine("Ingresa el monto: ");
+                    monto=double.Parse(Console.ReadLine()!);
                     
                         if(monto>0){
                             if(MenuPrincipal.cuentaUsuarioLogeado.Saldo>monto){
-
-                                GuardarJson.RemoverCuentaJson(MenuPrincipal.cuentaUsuarioLogeado);
-                                GuardarJson.RemoverCuentaJson(cuentaDestino);
+                                System.Console.WriteLine(MenuPrincipal.UsuarioLogeado);
+                                System.Console.WriteLine(ValidarUsuarios.usuarioDestino);
+                                
+                                RemoverJson.RemoverCuentasUsuariosJson(MenuPrincipal.UsuarioLogeado,MenuPrincipal.cuentaUsuarioLogeado);
+                                RemoverJson.RemoverCuentasUsuariosJson(ValidarUsuarios.usuarioDestino,cuentaDestino);
 
                                 Transacciones.Transferir(MenuPrincipal.cuentaUsuarioLogeado,cuentaDestino, monto); //este metodo recibe la cuenta que se valido al iniciar sesion
                                 
-                                //GuardarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.cuentaUsuarioLogeado);
-                                //GuardarJson.ActualizarCuentasDespuesTransaccion(cuentaDestino);
+                                //ActualizarJson.ActualizarCuentasDespuesTransaccion(ValidarUsuarios.UsuarioLogeado,MenuPrincipal.cuentaUsuarioLogeado);
+                                //ActualizarJson.ActualizarCuentasDespuesTransaccion(ValidarUsuarios.usuarioDestino,ValidarUsuarios.CuentaUsuarioDestino);
 
                                 System.Console.WriteLine("Transferencia exitosa.");
 
@@ -54,7 +60,9 @@ public class MenuTransferencia{
                             System.Console.WriteLine("No puedes introducir un monto menor o igal a 0.");
                             continue;
                         }
+                }
             }
+            
         }
         
     }
