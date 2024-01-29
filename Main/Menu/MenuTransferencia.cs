@@ -61,6 +61,10 @@ public class MenuTransferencia{
                             continue;
                         }
                 }
+                else{
+                    System.Console.WriteLine("No existe cuenta con ese numero");
+                    break;
+                }
             }
             
         }

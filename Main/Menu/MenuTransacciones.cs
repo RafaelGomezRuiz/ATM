@@ -27,7 +27,7 @@ public class MenuTransacciones{
                 bucle=false;
                 break;
             case OperacionCajero.Retirar:
-                //MenuRetirar.ShowMenuRetirar();
+                MenuRetirar.ShowMenuRetirar();
                 bucle=false;
                 break;
             case OperacionCajero.Depositar:

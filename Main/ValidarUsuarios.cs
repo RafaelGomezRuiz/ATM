@@ -19,7 +19,6 @@ public class ValidarUsuarios{
                 }
         }
         else{
-                    System.Console.WriteLine("No existe cuenta con ese numero");
                     return null;
                 }
     }
@@ -35,7 +34,7 @@ public class ValidarUsuarios{
             
         }
         else{
-                    System.Console.WriteLine("No+++ existe usuario con ese numero");
+                    
                     return null;
                 }
     }

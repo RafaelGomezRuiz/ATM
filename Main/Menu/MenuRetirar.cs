@@ -1,6 +1,6 @@
 public class MenuRetirar{
  
-    /*public static void ShowMenuRetirar()
+    public static void ShowMenuRetirar()
     {
         while(true)
             {
@@ -9,11 +9,11 @@ public class MenuRetirar{
                         if(MenuTransferencia.monto>0){
                             if(MenuPrincipal.cuentaUsuarioLogeado.Saldo>MenuTransferencia.monto){
 
-                                GuardarJson.RemoverCuentaJson(MenuPrincipal.cuentaUsuarioLogeado);
+                                RemoverJson.RemoverCuentasUsuariosJson(MenuPrincipal.UsuarioLogeado,MenuPrincipal.cuentaUsuarioLogeado);
 
                                 Transacciones.Retirar(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto); //este metodo recibe la cuenta que se valido al iniciar sesion
                                 
-                                GuardarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.cuentaUsuarioLogeado);
+                                ActualizarJson.ActualizarCuentasDespuesTransaccion(MenuPrincipal.UsuarioLogeado,MenuPrincipal.cuentaUsuarioLogeado);
                                 System.Console.WriteLine("Retiro exitoso.");
                                 Transacciones.OperacionRetiro(MenuPrincipal.cuentaUsuarioLogeado, MenuTransferencia.monto);
                                 GuardarJson.GuardarHistorial(Transacciones.operacion);
@@ -45,5 +45,5 @@ public class MenuRetirar{
                             continue;
                         }
             }
-    }*/
+    }
 }

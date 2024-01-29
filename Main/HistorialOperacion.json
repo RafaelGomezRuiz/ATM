@@ -5,5 +5,19 @@
     "NumeroCuentaDestino": 1,
     "Monto": 1.0,
     "Fecha": "2024-01-29T15:38:41.0917639-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Retiro",
+    "NumeroCuentaDestino": 0,
+    "Monto": 1.0,
+    "Fecha": "2024-01-29T15:48:48.3461389-04:00"
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Retiro",
+    "NumeroCuentaDestino": 0,
+    "Monto": 1.0,
+    "Fecha": "2024-01-29T15:49:25.7804673-04:00"
   }
 ]
