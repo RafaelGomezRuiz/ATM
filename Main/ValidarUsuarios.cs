@@ -1,30 +1,25 @@
 public class ValidarUsuarios{
     public static int conteo=0;
-    public static Cuenta? CuentaUsuarioLogeado;
-    public static Usuario? UsuarioLogeado;
-    public static Cuenta? CuentaUsuarioDestino;
-    public static Usuario? usuarioDestino;
-    
+    public static Cuenta? Cuenta;
+    public static Usuario? Usuario;
+
     //este nos da la cuenta del usuarioLogeado
     //y el usuarioLogeado
     public static Cuenta BuscarCuenta(int numCuenta){
         //buscar usuario que tenga cuentas y que el numero sea igual .... Tenemos que usar any para que sea booleana la respuesta ya que firstOrDefault devuelve un tipo Cuenta
-        UsuarioLogeado=GuardarJson.UsuariosActualesJson.FirstOrDefault(u=>u.Productos.Cuentas !=null && u.Productos.Cuentas.Any(b => b.NumeroCuenta==numCuenta));
+        Usuario=GuardarJson.UsuariosActualesJson.FirstOrDefault(u=>u.Productos.Cuentas !=null && u.Productos.Cuentas.Any(b => b.NumeroCuenta==numCuenta));
         
-        if(UsuarioLogeado != null && UsuarioLogeado.Productos.Cuentas != null){
-            CuentaUsuarioLogeado=UsuarioLogeado.Productos.Cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
-            System.Console.WriteLine(CuentaUsuarioLogeado);
-            if(CuentaUsuarioLogeado!=null){  
-                System.Console.WriteLine("Se encon la cuenta");
-                return CuentaUsuarioLogeado;    
+        if(Usuario != null && Usuario.Productos.Cuentas != null){
+            Cuenta=Usuario.Productos.Cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
+            if(Cuenta!=null){  
+                return Cuenta;    
                 }
             else{
-                System.Console.WriteLine("No++++++ existe cuenta con ese numero");
                 return null;
                 }
         }
         else{
-                    System.Console.WriteLine("No---------- existe cuenta con ese numero");
+                    System.Console.WriteLine("No existe cuenta con ese numero");
                     return null;
                 }
     }
@@ -32,18 +27,15 @@ public class ValidarUsuarios{
     //y el usuarioDestino
     public static Usuario BuscarUsuario(int numCuenta){
         //buscar usuario que tenga cuentas y que el numero sea igual .... Tenemos que usar any para que sea booleana la respuesta ya que firstOrDefault devuelve un tipo Cuenta
-        usuarioDestino=GuardarJson.UsuariosActualesJson.FirstOrDefault(u=>u.Productos.Cuentas !=null && u.Productos.Cuentas.Any(d=>d.NumeroCuenta==numCuenta));
+        Usuario=GuardarJson.UsuariosActualesJson.FirstOrDefault(u=>u.Productos.Cuentas !=null && u.Productos.Cuentas.Any(d=>d.NumeroCuenta==numCuenta));
         
-        if(usuarioDestino != null && usuarioDestino.Productos.Cuentas != null){
+        if(Usuario != null && Usuario.Productos.Cuentas != null){
             
-            CuentaUsuarioDestino=usuarioDestino.Productos.Cuentas.FirstOrDefault(p => p.NumeroCuenta==numCuenta);
-        System.Console.WriteLine(usuarioDestino);
-        System.Console.WriteLine("se encontroooo el usuario");
-                return usuarioDestino;    
+                return Usuario;    
             
         }
         else{
-                    System.Console.WriteLine("No---------- existe usuario con ese numero");
+                    System.Console.WriteLine("No+++ existe usuario con ese numero");
                     return null;
                 }
     }

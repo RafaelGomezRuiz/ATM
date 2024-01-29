@@ -10,7 +10,7 @@
           "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
           "NumeroCuenta": 1,
           "Pin": 1234,
-          "Saldo": 1420.0,
+          "Saldo": 1424.0,
           "TipoCuenta": "ahorros",
           "EstadoCuenta": false
         }
@@ -30,7 +30,7 @@
           "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
           "NumeroCuenta": 2,
           "Pin": 1234,
-          "Saldo": 46196.0,
+          "Saldo": 46192.0,
           "TipoCuenta": "corriente",
           "EstadoCuenta": true
         }
@@ -79,5 +79,4 @@
       "Tarjetas": null
     }
   }
-
 ]

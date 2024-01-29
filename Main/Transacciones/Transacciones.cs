@@ -28,7 +28,7 @@ public class Transacciones{
         {cuentaUsuarioLogeado.Saldo}
         ");
     }
-
+*/
     public static Operaciones OperacionTranferencia(Cuenta cuentaOrigen, Cuenta cuentaDestino, double monto){
 
         operacion.NumeroCuentaUsuario=cuentaOrigen.NumeroCuenta;
@@ -38,6 +38,7 @@ public class Transacciones{
         operacion.Fecha=fechaActual;
         return operacion;
     }
+    /*
     public static Operaciones  OperacionDeposito(Cuenta cuentaDestino, double monto){
         operacion.Operacion="Deposito";
         operacion.NumeroCuentaDestino=cuentaDestino.NumeroCuenta;
