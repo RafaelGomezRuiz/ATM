@@ -52,5 +52,14 @@
     "Fecha": "2024-01-29T16:44:25.4493049-04:00",
     "NumeroTarjeta": 0,
     "IdPrestamo": 0
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Consultar balance",
+    "NumeroCuentaDestino": 0,
+    "Monto": 0.0,
+    "Fecha": "2024-01-29T17:07:41.6784619-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
   }
 ]
