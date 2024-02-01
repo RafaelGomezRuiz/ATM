@@ -1,6 +1,6 @@
 public class Transacciones{
     
-    public static Operaciones operacion= new Operaciones();
+    public static Operaciones operacion= new Operaciones(); //El problema es que es estatico tu yo del futuro
 
     public static DateTime fechaActual=DateTime.Now;//cambialo
 

@@ -61,5 +61,14 @@
     "Fecha": "2024-01-29T17:07:41.6784619-04:00",
     "NumeroTarjeta": 0,
     "IdPrestamo": 0
+  },
+  {
+    "NumeroCuentaUsuario": 2,
+    "Operacion": "Transferencia",
+    "NumeroCuentaDestino": 1,
+    "Monto": 10.0,
+    "Fecha": "2024-02-01T11:50:59.2997914-04:00",
+    "NumeroTarjeta": 0,
+    "IdPrestamo": 0
   }
 ]

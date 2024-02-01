@@ -9,6 +9,4 @@ public class Operaciones{
     public int NumeroTarjeta{get;set;}
     public int IdPrestamo {get;set;}
 
-
-    
 }

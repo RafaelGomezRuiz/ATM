@@ -10,38 +10,25 @@
           "FechaCreacion": "2024-01-23T15:57:56.777334-04:00",
           "NumeroCuenta": 1,
           "Pin": 1234,
-          "Saldo": 1425.0,
+          "Saldo": 1435.0,
           "TipoCuenta": "ahorros",
           "EstadoCuenta": false
         }
       ],
-      "Prestamos": null,
-      "Tarjetas": null
-    }
-  },
-  {
-    "Nombre": "Huasca Buryes",
-    "Cedula": "4022000",
-    "Correo": "Aldedilloz@gmail.com",
-    "Telefono": 806803,
-    "Productos": {
-      "Cuentas": [
+      "Prestamos": [],
+      "Tarjetas": [
         {
-          "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
-          "NumeroCuenta": 2,
-          "Pin": 1234,
-          "Saldo": 46190.0,
-          "TipoCuenta": "corriente",
-          "EstadoCuenta": true
+          "NumeroTarjeta": 10,
+          "FechaExpiracion": "06/26",
+          "EstadoTarjeta": false,
+          "SaldoDeuda": 0.0
         }
-      ],
-      "Prestamos": null,
-      "Tarjetas": null
+      ]
     }
   },
   {
     "Nombre": "Oliver Betances",
-    "Cedula": "4022000",
+    "Cedula": "4022001",
     "Correo": "olioli@gmail.com",
     "Telefono": 806803,
     "Productos": {
@@ -55,13 +42,13 @@
           "EstadoCuenta": true
         }
       ],
-      "Prestamos": null,
-      "Tarjetas": null
+      "Prestamos": [],
+      "Tarjetas": []
     }
   },
   {
-    "Nombre": "El negrito ojos claros",
-    "Cedula": "4022000",
+    "Nombre": "Joshe Velazques",
+    "Cedula": "4022002",
     "Correo": "Ozhuna@gmail.com",
     "Telefono": 806803,
     "Productos": {
@@ -75,8 +62,50 @@
           "EstadoCuenta": true
         }
       ],
-      "Prestamos": null,
-      "Tarjetas": null
+      "Prestamos": [],
+      "Tarjetas": []
+    }
+  },
+  {
+    "Nombre": "huascass",
+    "Cedula": "4022000",
+    "Correo": "aldedllooo",
+    "Telefono": 806209,
+    "Productos": {
+      "Cuentas": [
+        {
+          "FechaCreacion": "2024-01-23T15:58:10.2881986-04:00",
+          "NumeroCuenta": 2,
+          "Pin": 1234,
+          "Saldo": 46180.0,
+          "TipoCuenta": "corriente",
+          "EstadoCuenta": true
+        }
+      ],
+      "Prestamos": [],
+      "Tarjetas": []
+    }
+  },
+  {
+    "Nombre": "jereeemy",
+    "Cedula": "400",
+    "Correo": "okokok",
+    "Telefono": 80980966,
+    "Productos": {
+      "Cuentas": [],
+      "Prestamos": [
+        {
+          "Id": 1.0,
+          "Monto": 200000.0,
+          "PlazoMeses": 24,
+          "TasaInteres": 15.0,
+          "Proposito": "Pagar Uni de mi hijo",
+          "Aprobado": true,
+          "FechaSolicitud": "2024-01-30T12:03:03.8708533-04:00",
+          "FechaAprobacion": "2024-01-30T15:33:13.5214472-04:00"
+        }
+      ],
+      "Tarjetas": []
     }
   }
 ]

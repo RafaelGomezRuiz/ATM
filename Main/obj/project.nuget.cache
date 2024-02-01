@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K4GHAyw9RoulBGGGl2AbC9jF+twOsBuTPF3tEoY79RQkmiwoBbgWMV4Rf9TB0YYNsKePnyu/s9sG6QxaWbAyxQ==",
+  "dgSpecHash": "N1xkCBvHau3i0ywipu09tX2o7+BNrSbUKRsHZRQBaLUC7BqtSFy9T6zl/0dvs7SMynli4AiXfc/WwU5xzD4llg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gsant\\Programacionll\\ATM\\main\\ATM.csproj",
+  "projectFilePath": "C:\\Users\\gsant\\Programacionll\\atm\\Main\\ATM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gsant\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
